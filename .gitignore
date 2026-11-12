@@ -1,0 +1,31 @@
+# secrets and local files
+.env
+.env.*
+!.env.example
+CLAUDE.local.md
+PUBLISH-NOTES.md
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# generated measurement scratch (results.json is committed on purpose)
+*.log
+
+# local caches
+.cache/
+
+# internal / assistant files
+CLAUDE.md
+.claude/

@@ -1,0 +1,3300 @@
+{
+  "source": "scripts/measure.py run 1, 2026-11-05, claude-sonnet-5-5",
+  "embedding_model": "voyage-4",
+  "collection_id": "harbor-goods__voyage-4",
+  "chunk_max_chars": 700,
+  "recordings": [
+    {
+      "question_id": "Q001",
+      "question": "How many days do customers have to return unused items?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy-2025:0",
+        "harbor-goods__voyage-4:returns-policy:0",
+        "harbor-goods__voyage-4:damaged-goods:1",
+        "harbor-goods__voyage-4:returns-policy-2025:1",
+        "harbor-goods__voyage-4:returns-policy-2025:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Under the current Returns Policy (applying to orders delivered on or after 15 January 2026), customers may return unused items within 30 days of delivery. Items delivered during peak season may have a longer window per the Holiday Schedule.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:0\",\"quote\":\"Customers may return unused items within 30 days of delivery.\"},{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:0\",\"quote\":\"Items delivered during the peak season may have a longer window, as set out in the Holiday Schedule.\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"Under the current Returns Policy, customers may return unused items within 30 days of delivery. Items delivered during the peak season may have a longer window.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:0\",\"quote\":\"Customers may return unused items within 30 days of delivery.\"},{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:0\",\"quote\":\"Items delivered during the peak season may have a longer window, as set out in the Holiday Schedule.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q002",
+      "question": "Who covers the postage when I send back something I simply changed my mind about?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy:1",
+        "harbor-goods__voyage-4:damaged-goods:1",
+        "harbor-goods__voyage-4:returns-policy-2025:1",
+        "harbor-goods__voyage-4:returns-policy:2",
+        "harbor-goods__voyage-4:shipping-policy:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The customer covers it: under the current returns policy, a flat return label fee of 6.95 USD is deducted from the refund for change-of-mind returns. Customers may use their own carrier instead, but then they pay that carrier directly.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:1\",\"quote\":\"For change-of-mind returns, a flat return label fee of 6.95 USD is deducted from the refund.\"},{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:2\",\"quote\":\"Customers may use their own carrier instead, but then they pay that carrier directly and carry the risk of loss until the parcel reaches the warehouse.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q003",
+      "question": "What restocking fee applies to opened electronics?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy:2",
+        "harbor-goods__voyage-4:returns-policy:3",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:refunds-chargebacks:3",
+        "harbor-goods__voyage-4:shipping-rates-zones:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Opened electronics, such as GPS units and satellite messengers, carry a 15 percent restocking fee unless they are defective (current Returns Policy).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:3\",\"quote\":\"Opened electronics, such as GPS units and satellite messengers, carry a 15 percent restocking fee unless they are defective.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q004",
+      "question": "Can a customer exchange an item for a different size?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:damaged-goods:1",
+        "harbor-goods__voyage-4:returns-policy-2025:1",
+        "harbor-goods__voyage-4:returns-policy:2",
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:returns-policy:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Yes. Each order includes one free exchange for a different size or color of the same item, shipped by standard service at no charge. A second exchange on the same order is treated as a return and a new order.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:2\",\"quote\":\"Each order includes one free exchange for a different size or color of the same item. The exchange item ships by standard service at no charge. A second exchange on the same order is treated as a return and a new order.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q005",
+      "question": "When was the 2025 returns policy superseded, and by which version?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy-2025:0",
+        "harbor-goods__voyage-4:returns-policy-2025:1",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:returns-policy:0",
+        "harbor-goods__voyage-4:returns-policy:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The 2025 returns policy was superseded on 2026-01-15 by the Returns Policy version 2026-01.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy-2025\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy-2025:0\",\"quote\":\"Superseded on 2026-01-15 by the Returns Policy version 2026-01.\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"Superseded on 2026-01-15 by the Returns Policy version 2026-01.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy-2025\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy-2025:0\",\"quote\":\"Superseded on 2026-01-15 by the Returns Policy version 2026-01.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q006",
+      "question": "What are the payment terms with Alpinewood?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5",
+        "harbor-goods__voyage-4:supplier-terms-alpine:2",
+        "harbor-goods__voyage-4:invoice-rules:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Payment is due net 30 from the invoice date. Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:1\",\"quote\":\"Payment is due net 30 from the invoice date.\"},{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:1\",\"quote\":\"Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q007",
+      "question": "What are the payment terms with Trailworks?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Payment is due net 45 from the invoice date, with no early payment discount. Payment is made by bank transfer in US dollars.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:1\",\"quote\":\"Payment is due net 45 from the invoice date. Trailworks does not offer an early payment discount.\"},{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:2\",\"quote\":\"Payment is made by bank transfer in US dollars.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q008",
+      "question": "What is the minimum order value for a Trailworks purchase order?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The minimum order value for a Trailworks purchase order is 4,000 USD, measured before freight.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:1\",\"quote\":\"The minimum order value is 4,000 USD per purchase order, measured before freight.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q009",
+      "question": "What does Alpinewood owe Harbor Goods when a delivery is late?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Alpinewood credits Harbor Goods 1 percent of the purchase order value for each full week of delay, capped at 5 percent of the purchase order value. Harbor Goods may also cancel any part of an order that is more than 4 weeks late without paying for it.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:3\",\"quote\":\"Alpinewood credits Harbor Goods 1 percent of the purchase order value for each full week of delay, capped at 5 percent of the purchase order value.\"},{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:3\",\"quote\":\"Harbor Goods may cancel any part of an order that is more than 4 weeks late without paying for it.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q010",
+      "question": "What is the standard lead time for Trailworks orders?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:shipping-policy:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The standard lead time for Trailworks orders is 35 calendar days from confirmation of the purchase order to delivery at the Harbor Goods warehouse (Harbor Line backpacks are longer, at 50 calendar days).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:3\",\"quote\":\"The standard lead time is 35 calendar days from confirmation of the purchase order to delivery at the Harbor Goods warehouse.\"},{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:3\",\"quote\":\"For Harbor Line backpacks, the lead time is 50 calendar days.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q011",
+      "question": "Do we get anything off if we settle an Alpinewood bill quickly?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Yes. Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date (otherwise payment is due net 30).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:2\",\"quote\":\"Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date.\"},{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:1\",\"quote\":\"Payment is due net 30 from the invoice date.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q012",
+      "question": "How long does Harbor Goods have to report manufacturing defects to Trailworks?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5",
+        "harbor-goods__voyage-4:receiving-goods:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:damaged-goods:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Harbor Goods must report manufacturing defects to Trailworks within 30 days of receipt.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:5\",\"quote\":\"Harbor Goods reports manufacturing defects to Trailworks within 30 days of receipt.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q013",
+      "question": "How long are tents covered by the warranty?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:warranty:1",
+        "harbor-goods__voyage-4:warranty:3",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Tents and shelters are covered for 2 years from the date of delivery.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:0\",\"quote\":\"Tents and shelters are covered for 2 years from the date of delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q014",
+      "question": "How long is the warranty on Harbor Line backpacks?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:warranty:1",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Harbor Line backpacks are covered for 5 years from the date of delivery under the Harbor Goods warranty.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:1\",\"quote\":\"Harbor Line backpacks, our own brand, are covered for 5 years from the date of delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q015",
+      "question": "My tent fabric was damaged by the sun after two seasons of use. Will the warranty pay for it?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:3",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:damaged-goods:1",
+        "harbor-goods__voyage-4:damaged-goods:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"No. UV damage to tent fabrics is excluded after the first 12 months, and the tent warranty period is 2 years from delivery, so sun damage after two seasons of use is not covered if it occurred after the first 12 months.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:3\",\"quote\":\"UV damage to tent fabrics is excluded after the first 12 months.\"},{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:0\",\"quote\":\"Tents and shelters are covered for 2 years from the date of delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q016",
+      "question": "What happens to a warranty claim when the repair would cost too much?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:4",
+        "harbor-goods__voyage-4:warranty:6",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5",
+        "harbor-goods__voyage-4:warranty:7"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"If the repair would cost more than 60 percent of the price paid, Harbor Goods replaces the product with the same item or the closest current model. If neither repair nor replacement is possible, it refunds the price paid.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:4\",\"quote\":\"If the repair would cost more than 60 percent of the price paid, we replace the product with the same item or the closest current model.\"},{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:4\",\"quote\":\"If neither repair nor replacement is possible, we refund the price paid.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q017",
+      "question": "Which form is used to make a warranty claim?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:6",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:warranty:7",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Warranty claims are made with warranty claim form WC-1, available from the customer account or from support.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:6\",\"quote\":\"Claims are made with warranty claim form WC-1, which is available from the customer account or from support.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q018",
+      "question": "How long does Harbor Goods keep order records?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:data-retention:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Order records, including invoices and payment records, are kept for 7 years after the end of the financial year in which the order was placed.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:1\",\"quote\":\"Order records, including invoices and payment records, are kept for 7 years after the end of the financial year in which the order was placed, to meet tax and accounting rules.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q019",
+      "question": "If I ask Harbor Goods to erase my personal information, how long until it is gone?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:data-retention:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:shipping-policy:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Harbor Goods verifies your identity within 5 business days, and once verified it completes the deletion within 30 days. Order records required for tax purposes are kept for the rest of their 7 year period, with name and contact details replaced by a reference number where the law allows.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:3\",\"quote\":\"We verify the identity of the person making the request within 5 business days\"},{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:3\",\"quote\":\"Once the identity is verified, we complete the deletion within 30 days and send a confirmation email.\"},{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:3\",\"quote\":\"Order records that we must keep for tax purposes are kept for the rest of their 7 year period, but the name and contact details on them are replaced with a reference number where the law allows.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q020",
+      "question": "How long are backups of the order and customer systems kept?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:5",
+        "harbor-goods__voyage-4:data-retention:1",
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:data-retention:4",
+        "harbor-goods__voyage-4:returns-policy-2025:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Backups of the order and customer systems are kept for 35 days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:5\",\"quote\":\"Backups of the order and customer systems are kept for 35 days.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q021",
+      "question": "What is the minimum order value for free shipping?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:1",
+        "harbor-goods__voyage-4:carrier-rules:2",
+        "harbor-goods__voyage-4:shipping-rates-zones:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4, measured after discounts and before tax. Zone 5 orders never qualify.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:1\",\"quote\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4. The threshold is measured after discounts and before tax. Orders to Zone 5 never qualify for free shipping\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q022",
+      "question": "How soon after I buy something does it leave the warehouse?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:2",
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:holiday-schedule:1",
+        "harbor-goods__voyage-4:shipping-policy:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"In-stock items have a handling time of 1 business day, and orders placed before 1:00 PM Eastern on a business day usually leave the same day. During peak season, handling may extend to 2 business days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"Our handling time is 1 business day for in-stock items.\"},{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"Orders placed before 1:00 PM Eastern time on a business day usually leave the warehouse the same day\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:1\",\"quote\":\"During peak season, handling time may extend to 2 business days\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q023",
+      "question": "How much does a standard parcel to Zone 2 cost?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-rates-zones:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:shipping-rates-zones:3",
+        "harbor-goods__voyage-4:shipping-policy:3",
+        "harbor-goods__voyage-4:shipping-policy:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A standard parcel to Zone 2 costs 8.40 USD each (for parcels weighing up to 5 lb).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:1\",\"quote\":\"Zone 2 parcels cost 8.40 USD each.\"},{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:1\",\"quote\":\"Standard rates apply to parcels weighing up to 5 lb.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q024",
+      "question": "What is the remote-area surcharge, and does it apply when shipping is free?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-rates-zones:2",
+        "harbor-goods__voyage-4:shipping-policy:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:shipping-rates-zones:3",
+        "harbor-goods__voyage-4:shipping-policy:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The remote-area surcharge is 6.50 USD per parcel for every parcel sent to a postal code on the remote-area list. It still applies even when the order qualifies for free shipping.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:2\",\"quote\":\"A remote-area surcharge of 6.50 USD per parcel applies to every parcel sent to a postal code on the remote-area list, even when the order qualifies for free shipping.\"},{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:1\",\"quote\":\"the remote-area surcharge still applies to orders that do qualify\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "question": "What is the heaviest single parcel NorthRoute Parcel will carry?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:carrier-rules:0",
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:carrier-rules:2",
+        "harbor-goods__voyage-4:shipping-rates-zones:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"NorthRoute Parcel carries single parcels weighing up to 30 lb.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"carrier-rules\",\"chunk_id\":\"harbor-goods__voyage-4:carrier-rules:0\",\"quote\":\"NorthRoute Parcel carries single parcels weighing up to 30 lb.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q026",
+      "question": "Can two promo codes be used on the same order?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:promo-price-rules:0",
+        "harbor-goods__voyage-4:promo-price-rules:1",
+        "harbor-goods__voyage-4:payment-methods:1",
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:payment-methods:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"No. Only one promo code can be used per order, and promo codes cannot be combined with each other.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"promo-price-rules\",\"chunk_id\":\"harbor-goods__voyage-4:promo-price-rules:0\",\"quote\":\"Only one promo code can be used per order.\"},{\"doc_id\":\"promo-price-rules\",\"chunk_id\":\"harbor-goods__voyage-4:promo-price-rules:0\",\"quote\":\"Promo codes cannot be combined with each other or with the employee discount.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q027",
+      "question": "Once my returned item has been checked, how soon do I get my money back?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:damaged-goods:1",
+        "harbor-goods__voyage-4:refunds-chargebacks:0",
+        "harbor-goods__voyage-4:returns-policy:0",
+        "harbor-goods__voyage-4:returns-policy:1",
+        "harbor-goods__voyage-4:returns-policy-2025:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Refunds are issued within 5 business days after the returned item passes inspection. Card refunds can then take up to 10 business days to appear on your statement, while store credit appears within 1 hour of being issued.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:0\",\"quote\":\"Refunds are issued within 5 business days after the returned item passes inspection.\"},{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:0\",\"quote\":\"Card refunds can take up to 10 business days to appear on the customer's statement, depending on the bank.\"},{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:0\",\"quote\":\"Store credit refunds appear in the customer account within 1 hour of being issued.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q028",
+      "question": "Which chargebacks does the finance team accept without contesting them?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:refunds-chargebacks:2",
+        "harbor-goods__voyage-4:refunds-chargebacks:1",
+        "harbor-goods__voyage-4:refunds-chargebacks:3",
+        "harbor-goods__voyage-4:refunds-chargebacks:0",
+        "harbor-goods__voyage-4:invoice-rules:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Chargebacks for amounts under 25 USD are accepted without a contest, because the cost of responding is higher than the amount.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:2\",\"quote\":\"Chargebacks for amounts under 25 USD are accepted without a contest, because the cost of responding is higher than the amount.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q029",
+      "question": "Who must approve a purchase order worth 12,000 USD?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:purchase-orders:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:purchase-orders:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A PO above 10,000 USD needs approval from both the Operations Manager and the Finance Director.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:1\",\"quote\":\"Purchase orders above 10,000 USD need approval from both the Operations Manager and the Finance Director.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q030",
+      "question": "What format do purchase order numbers use?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:purchase-orders:0",
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Each PO number uses the format PO-2026-0001, counting up through the year.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:0\",\"quote\":\"Each PO gets a number in the format PO-2026-0001, counting up through the year.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q031",
+      "question": "What price difference is allowed in the three-way match?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:1",
+        "harbor-goods__voyage-4:promo-price-rules:2",
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:invoice-rules:0",
+        "harbor-goods__voyage-4:invoice-rules:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A price difference is accepted if it is no more than 2 percent of the line value or 50 USD, whichever is lower. Any larger difference is sent to the buyer to resolve with the supplier within 5 business days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:1\",\"quote\":\"A price difference is accepted if it is no more than 2 percent of the line value or 50 USD, whichever is lower.\"},{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:1\",\"quote\":\"Any larger difference is sent to the buyer, who must resolve it with the supplier within 5 business days.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q032",
+      "question": "On which day of the week are supplier invoices paid?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:invoice-rules:0",
+        "harbor-goods__voyage-4:invoice-rules:1",
+        "harbor-goods__voyage-4:invoice-rules:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Supplier invoices are paid in payment runs that take place every Thursday.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:2\",\"quote\":\"Payment runs take place every Thursday.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q033",
+      "question": "Do Harbor Goods gift cards expire?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:payment-methods:1",
+        "harbor-goods__voyage-4:payment-methods:0",
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:supplier-terms-alpine:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"No, Harbor Goods gift cards never expire.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"payment-methods\",\"chunk_id\":\"harbor-goods__voyage-4:payment-methods:1\",\"quote\":\"gift cards never expire\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q034",
+      "question": "How often are class A SKUs counted?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:inventory-counts:0",
+        "harbor-goods__voyage-4:inventory-counts:1",
+        "harbor-goods__voyage-4:inventory-counts:3",
+        "harbor-goods__voyage-4:inventory-counts:2",
+        "harbor-goods__voyage-4:holiday-schedule:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Class A SKUs are counted every week.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"inventory-counts\",\"chunk_id\":\"harbor-goods__voyage-4:inventory-counts:0\",\"quote\":\"Class A SKUs are counted every week.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q035",
+      "question": "When does a stock count difference mean someone else has to count the bin again?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:inventory-counts:3",
+        "harbor-goods__voyage-4:inventory-counts:1",
+        "harbor-goods__voyage-4:inventory-counts:2",
+        "harbor-goods__voyage-4:inventory-counts:0",
+        "harbor-goods__voyage-4:receiving-goods:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A second counter recounts when the variance is more than 3 percent of the system quantity. For SKUs with a system quantity under 20 units, any difference of 2 units or more triggers a recount.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"inventory-counts\",\"chunk_id\":\"harbor-goods__voyage-4:inventory-counts:1\",\"quote\":\"A variance of more than 3 percent of the system quantity triggers a recount by a second counter.\"},{\"doc_id\":\"inventory-counts\",\"chunk_id\":\"harbor-goods__voyage-4:inventory-counts:1\",\"quote\":\"For SKUs with a system quantity under 20 units, any difference of 2 units or more triggers a recount.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q036",
+      "question": "How soon must visible transport damage on a supplier delivery be reported?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:receiving-goods:2",
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:receiving-goods:0",
+        "harbor-goods__voyage-4:damaged-goods:2",
+        "harbor-goods__voyage-4:receiving-goods:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Visible transport damage on a supplier delivery must be reported to the carrier and the supplier within 48 hours of delivery, with photos of the damaged cartons and contents.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"receiving-goods\",\"chunk_id\":\"harbor-goods__voyage-4:receiving-goods:2\",\"quote\":\"Visible transport damage must be reported to the carrier and the supplier within 48 hours of delivery, with photos of the damaged cartons and contents.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q037",
+      "question": "How much empty space should a packer leave around the items when picking a box?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:packing:0",
+        "harbor-goods__voyage-4:packing:1",
+        "harbor-goods__voyage-4:packing:3",
+        "harbor-goods__voyage-4:packing:2",
+        "harbor-goods__voyage-4:damaged-goods:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Use the smallest box that leaves at least 2 inches of padding between the items and every side of the box.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"packing\",\"chunk_id\":\"harbor-goods__voyage-4:packing:0\",\"quote\":\"Use the smallest box that leaves at least 2 inches of padding between the items and every side of the box.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q038",
+      "question": "How many photos must a customer send when reporting transit damage?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:receiving-goods:2",
+        "harbor-goods__voyage-4:damaged-goods:2",
+        "harbor-goods__voyage-4:damaged-goods:1",
+        "harbor-goods__voyage-4:damaged-goods:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A customer must include at least 3 photos: one of the outer box, one of the packing inside, and one of the damaged item.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"damaged-goods\",\"chunk_id\":\"harbor-goods__voyage-4:damaged-goods:0\",\"quote\":\"The report must include at least 3 photos: one of the outer box, one of the packing inside, and one of the damaged item.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q039",
+      "question": "What is the first-response target for support emails?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:support-hours-sla:0",
+        "harbor-goods__voyage-4:support-hours-sla:1",
+        "harbor-goods__voyage-4:support-hours-sla:3",
+        "harbor-goods__voyage-4:support-hours-sla:2",
+        "harbor-goods__voyage-4:warranty:6"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The first-response target for email is 4 business hours.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"support-hours-sla\",\"chunk_id\":\"harbor-goods__voyage-4:support-hours-sla:0\",\"quote\":\"The first-response target for email is 4 business hours.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q040",
+      "question": "What is the last order day for standard delivery before Christmas 2026?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:holiday-schedule:2",
+        "harbor-goods__voyage-4:holiday-schedule:0",
+        "harbor-goods__voyage-4:holiday-schedule:1",
+        "harbor-goods__voyage-4:shipping-policy:2",
+        "harbor-goods__voyage-4:returns-policy-2025:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The last order day for standard delivery before Christmas 2026 is Wednesday 16 December 2026 (Zone 5 orders for Alaska and Hawaii should be placed by Friday 11 December 2026).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:2\",\"quote\":\"The last order day for standard delivery is Wednesday 16 December 2026.\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:2\",\"quote\":\"Zone 5 orders for Alaska and Hawaii should be placed by Friday 11 December 2026 for standard delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q041",
+      "question": "When is a Trailworks invoice due, and what late fee can Trailworks charge if Harbor Goods pays after that?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:invoice-rules:3",
+        "harbor-goods__voyage-4:invoice-rules:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The excerpts do not state Trailworks' payment terms, so the due date cannot be determined. The invoice rules only say invoices are paid per each supplier's terms, and that suppliers may charge a late fee of 1.5 percent per month on any amount paid after the due date, worked out per full month of delay.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:2\",\"quote\":\"Invoices are paid according to the payment terms in each supplier's terms document, counted from the invoice date.\"},{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:2\",\"quote\":\"Suppliers may charge a late fee of 1.5 percent per month on any invoice amount that Harbor Goods pays after the due date.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q042",
+      "question": "Who has to approve a purchase order placed at exactly the Alpinewood minimum order value?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The Alpinewood minimum order value is 2,500 USD per PO, which is above 1,000 USD and up to 10,000 USD, so it needs approval from the Operations Manager (approval is based on total PO value including freight).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:1\",\"quote\":\"The minimum order value is 2,500 USD per purchase order, measured before freight.\"},{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:1\",\"quote\":\"Purchase orders above 1,000 USD and up to 10,000 USD need approval from the Operations Manager.\"},{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:1\",\"quote\":\"The approval limit is based on the total value of the PO including freight and before any early payment discount.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q043",
+      "question": "A customer orders 90 USD of gear by standard service to a Zone 3 postal code on the remote-area list. What do they pay for shipping?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-rates-zones:2",
+        "harbor-goods__voyage-4:shipping-rates-zones:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:shipping-policy:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4, so the 90 USD order qualifies for free shipping, but the remote-area surcharge of 6.50 USD per parcel still applies. The customer pays 6.50 USD per parcel for shipping (6.50 USD total if it ships in one parcel).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:1\",\"quote\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4.\"},{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:2\",\"quote\":\"A remote-area surcharge of 6.50 USD per parcel applies to every parcel sent to a postal code on the remote-area list, even when the order qualifies for free shipping.\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"The order qualifies for free standard shipping, but the remote-area surcharge of 6.50 USD per parcel still applies, so the customer pays 6.50 USD if it ships in one parcel.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:1\",\"quote\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4.\"},{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:2\",\"quote\":\"A remote-area surcharge of 6.50 USD per parcel applies to every parcel sent to a postal code on the remote-area list, even when the order qualifies for free shipping.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q044",
+      "question": "After a change-of-mind return reaches the warehouse, how soon is it inspected and what is deducted from the refund?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:refunds-chargebacks:0",
+        "harbor-goods__voyage-4:returns-policy:1",
+        "harbor-goods__voyage-4:refunds-chargebacks:1",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:returns-policy:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A returned item is inspected within 3 business days of arriving at the warehouse. For a change-of-mind return, a flat return label fee of 6.95 USD is deducted from the refund.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:0\",\"quote\":\"Returned items are inspected within 3 business days of arriving at the warehouse.\"},{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:1\",\"quote\":\"For change-of-mind returns, a flat return label fee of 6.95 USD is deducted from the refund.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q045",
+      "question": "How long is the customer warranty on Harbor Line backpacks, and for how long does Trailworks reimburse those claims?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:warranty:6",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Trailworks reimburses approved warranty claims on Harbor Line backpacks for up to 5 years from delivery to the customer. The excerpts do not state the customer warranty period for backpacks (only tents/shelters and sleeping bags/pads at 2 years are shown), so that part is not in the documents.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:5\",\"quote\":\"and for up to 5 years for Harbor Line backpacks\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"Trailworks reimburses approved warranty claims on Harbor Line backpacks for up to 5 years from delivery to the customer. The excerpts do not state the customer warranty period for backpacks, so that part is not in the documents.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:5\",\"quote\":\"and for up to 5 years for Harbor Line backpacks\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q046",
+      "question": "What is the heaviest carton a packer may send with NorthRoute, and which carrier takes heavier shipments?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:carrier-rules:0",
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:packing:1",
+        "harbor-goods__voyage-4:carrier-rules:3",
+        "harbor-goods__voyage-4:carrier-rules:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A single carton sent with NorthRoute Parcel must not weigh more than 30 lb. Heavier shipments, from 30.1 lb to 150 lb, go by Swiftline Freight.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"packing\",\"chunk_id\":\"harbor-goods__voyage-4:packing:1\",\"quote\":\"A single carton must not weigh more than 30 lb, so that it can travel with NorthRoute Parcel.\"},{\"doc_id\":\"carrier-rules\",\"chunk_id\":\"harbor-goods__voyage-4:carrier-rules:0\",\"quote\":\"Swiftline Freight carries shipments weighing from 30.1 lb to 150 lb\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q047",
+      "question": "What is the normal handling time, and how long can it be during the 2026 peak season?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:holiday-schedule:1",
+        "harbor-goods__voyage-4:shipping-policy:2",
+        "harbor-goods__voyage-4:holiday-schedule:0",
+        "harbor-goods__voyage-4:holiday-schedule:3",
+        "harbor-goods__voyage-4:holiday-schedule:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Normal handling time is 1 business day for in-stock items, and during the 2026 peak season it may extend to 2 business days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"Our handling time is 1 business day for in-stock items.\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:1\",\"quote\":\"During peak season, handling time may extend to 2 business days\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"Normal handling time is 1 business day for in-stock items, and during peak season it may extend to 2 business days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"Our handling time is 1 business day for in-stock items.\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:1\",\"quote\":\"During peak season, handling time may extend to 2 business days\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q048",
+      "question": "How long does a customer have to report a parcel that arrived broken, and how fast should support first reply to that ticket?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:support-hours-sla:2",
+        "harbor-goods__voyage-4:support-hours-sla:1",
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:support-hours-sla:0",
+        "harbor-goods__voyage-4:shipping-policy:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Customers must report transit damage within 7 days of delivery. A damaged order is a priority ticket, so support should give a first response within 2 business hours.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"damaged-goods\",\"chunk_id\":\"harbor-goods__voyage-4:damaged-goods:0\",\"quote\":\"Customers must report transit damage within 7 days of delivery.\"},{\"doc_id\":\"support-hours-sla\",\"chunk_id\":\"harbor-goods__voyage-4:support-hours-sla:1\",\"quote\":\"Tickets about a lost parcel, a damaged order, a payment taken twice or a safety concern with a product are priority tickets. Priority tickets get a first response within 2 business hours.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q049",
+      "question": "Which warehouse document must agree with the invoice before accounts payable pays a supplier, and when is it created?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:0",
+        "harbor-goods__voyage-4:invoice-rules:1",
+        "harbor-goods__voyage-4:invoice-rules:3",
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:receiving-goods:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The receiving report must agree with the invoice (along with the purchase order) in the three-way match, and the receiver enters it in the inventory system on the day of delivery.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:1\",\"quote\":\"The invoice, the purchase order and the receiving report must agree on the items, quantities and prices.\"},{\"doc_id\":\"receiving-goods\",\"chunk_id\":\"harbor-goods__voyage-4:receiving-goods:3\",\"quote\":\"The receiver enters a receiving report in the inventory system on the day of delivery\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q050",
+      "question": "Are paid supplier invoices and customer order records kept for the same length of time?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:1",
+        "harbor-goods__voyage-4:invoice-rules:0",
+        "harbor-goods__voyage-4:invoice-rules:3",
+        "harbor-goods__voyage-4:invoice-rules:1",
+        "harbor-goods__voyage-4:invoice-rules:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Yes, both are kept for 7 years, although the starting point differs: order records are kept for 7 years after the end of the financial year in which the order was placed, while paid supplier invoices are stored for 7 years in the finance system.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:1\",\"quote\":\"Order records, including invoices and payment records, are kept for 7 years after the end of the financial year in which the order was placed\"},{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:3\",\"quote\":\"Paid invoices and their matching documents are stored in the finance system for 7 years.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q051",
+      "question": "Does Harbor Goods offer a student discount?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:payment-methods:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:promo-price-rules:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q052",
+      "question": "What is the name of the Harbor Goods CEO?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q053",
+      "question": "How many points do customers earn in the Harbor Goods loyalty program?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:payment-methods:0",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q054",
+      "question": "Can customers collect their orders by curbside pickup at the warehouse?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:holiday-schedule:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:carrier-rules:2",
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:holiday-schedule:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q055",
+      "question": "Does Harbor Goods buy carbon offsets for its shipments?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:carrier-rules:0",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4",
+        "harbor-goods__voyage-4:payment-methods:0",
+        "harbor-goods__voyage-4:damaged-goods:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q056",
+      "question": "What hourly wage does Harbor Goods pay its warehouse packers?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:packing:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q057",
+      "question": "Does Harbor Goods sell bicycles or bicycle parts?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:payment-methods:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q058",
+      "question": "Is there a Harbor Goods mobile app for placing orders?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:payment-methods:0",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:data-retention:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q059",
+      "question": "In what year was Harbor Goods founded?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q060",
+      "question": "What reward do customers get for a referral that brings in a new customer?",
+      "mode": "hybrid",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:refunds-chargebacks:3",
+        "harbor-goods__voyage-4:damaged-goods:1",
+        "harbor-goods__voyage-4:promo-price-rules:2",
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:payment-methods:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q001",
+      "question": "How many days do customers have to return unused items?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy:0",
+        "harbor-goods__voyage-4:returns-policy-2025:0",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:damaged-goods:1",
+        "harbor-goods__voyage-4:holiday-schedule:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Customers may return unused items within 30 days of delivery, according to the current Returns Policy (the 45-day window is from the superseded 2025 version). Peak-season deliveries may have a longer window.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:0\",\"quote\":\"Customers may return unused items within 30 days of delivery.\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"Customers may return unused items within 30 days of delivery, according to the current Returns Policy. Items delivered during the peak season may have a longer window.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:0\",\"quote\":\"Customers may return unused items within 30 days of delivery.\"},{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:0\",\"quote\":\"Items delivered during the peak season may have a longer window\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q002",
+      "question": "Who covers the postage when I send back something I simply changed my mind about?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy:1",
+        "harbor-goods__voyage-4:returns-policy-2025:1",
+        "harbor-goods__voyage-4:returns-policy:2",
+        "harbor-goods__voyage-4:refunds-chargebacks:1",
+        "harbor-goods__voyage-4:damaged-goods:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Under the current returns policy, the customer effectively pays: a flat return label fee of 6.95 USD is deducted from the refund. Customers may instead use their own carrier, but then they pay that carrier directly and carry the risk of loss until the parcel reaches the warehouse.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:2\",\"quote\":\"For change-of-mind returns, a flat return label fee of 6.95 USD is deducted from the refund.\"},{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:2\",\"quote\":\"Customers may use their own carrier instead, but then they pay that carrier directly and carry the risk of loss until the parcel reaches the warehouse.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q003",
+      "question": "What restocking fee applies to opened electronics?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy:3",
+        "harbor-goods__voyage-4:returns-policy:2",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:returns-policy:1",
+        "harbor-goods__voyage-4:damaged-goods:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Opened electronics, such as GPS units and satellite messengers, carry a 15 percent restocking fee unless they are defective (current Returns Policy).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:3\",\"quote\":\"Opened electronics, such as GPS units and satellite messengers, carry a 15 percent restocking fee unless they are defective.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q004",
+      "question": "Can a customer exchange an item for a different size?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy:2",
+        "harbor-goods__voyage-4:returns-policy-2025:1",
+        "harbor-goods__voyage-4:returns-policy:1",
+        "harbor-goods__voyage-4:returns-policy:0",
+        "harbor-goods__voyage-4:warranty:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Yes. Each order includes one free exchange for a different size or color of the same item, shipped by standard service at no charge. A second exchange on the same order is treated as a return and a new order.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:2\",\"quote\":\"Each order includes one free exchange for a different size or color of the same item. The exchange item ships by standard service at no charge. A second exchange on the same order is treated as a return and a new order.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q005",
+      "question": "When was the 2025 returns policy superseded, and by which version?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy-2025:0",
+        "harbor-goods__voyage-4:returns-policy:0",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:returns-policy-2025:1",
+        "harbor-goods__voyage-4:warranty:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The 2025 returns policy was superseded on 2026-01-15 by the Returns Policy version 2026-01.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy-2025\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy-2025:0\",\"quote\":\"Superseded on 2026-01-15 by the Returns Policy version 2026-01.\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"Superseded on 2026-01-15 by the Returns Policy version 2026-01.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy-2025\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy-2025:0\",\"quote\":\"Superseded on 2026-01-15 by the Returns Policy version 2026-01.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q006",
+      "question": "What are the payment terms with Alpinewood?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:2",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Payment is due net 30 from the invoice date, and Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date. Payment is made by bank transfer in US dollars.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:1\",\"quote\":\"Payment is due net 30 from the invoice date.\"},{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:1\",\"quote\":\"Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date.\"},{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:2\",\"quote\":\"Payment is made by bank transfer in US dollars.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q007",
+      "question": "What are the payment terms with Trailworks?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Payment is due net 45 from the invoice date, and Trailworks does not offer an early payment discount. Payment is made by bank transfer in US dollars.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:1\",\"quote\":\"Payment is due net 45 from the invoice date. Trailworks does not offer an early payment discount.\"},{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:2\",\"quote\":\"Payment is made by bank transfer in US dollars.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q008",
+      "question": "What is the minimum order value for a Trailworks purchase order?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The minimum order value for a Trailworks purchase order is 4,000 USD, measured before freight.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:1\",\"quote\":\"The minimum order value is 4,000 USD per purchase order, measured before freight.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q009",
+      "question": "What does Alpinewood owe Harbor Goods when a delivery is late?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:4",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:supplier-terms-alpine:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Alpinewood credits Harbor Goods 1 percent of the purchase order value for each full week of delay, capped at 5 percent of the purchase order value. Harbor Goods may also cancel any part of an order more than 4 weeks late without paying for it.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:3\",\"quote\":\"Alpinewood credits Harbor Goods 1 percent of the purchase order value for each full week of delay, capped at 5 percent of the purchase order value.\"},{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:3\",\"quote\":\"Harbor Goods may cancel any part of an order that is more than 4 weeks late without paying for it.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q010",
+      "question": "What is the standard lead time for Trailworks orders?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:shipping-policy:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The standard lead time for Trailworks orders is 35 calendar days from confirmation of the purchase order to delivery at the Harbor Goods warehouse (Harbor Line backpacks take 50 calendar days).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:3\",\"quote\":\"The standard lead time is 35 calendar days from confirmation of the purchase order to delivery at the Harbor Goods warehouse.\"},{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:3\",\"quote\":\"For Harbor Line backpacks, the lead time is 50 calendar days.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q011",
+      "question": "Do we get anything off if we settle an Alpinewood bill quickly?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-alpine:2",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Yes. Harbor Goods may take a 2 percent early payment discount if it pays the full Alpinewood invoice within 10 days of the invoice date.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:2\",\"quote\":\"Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q012",
+      "question": "How long does Harbor Goods have to report manufacturing defects to Trailworks?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5",
+        "harbor-goods__voyage-4:warranty:6",
+        "harbor-goods__voyage-4:receiving-goods:2",
+        "harbor-goods__voyage-4:warranty:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Harbor Goods must report manufacturing defects to Trailworks within 30 days of receipt.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:5\",\"quote\":\"Defects Harbor Goods reports manufacturing defects to Trailworks within 30 days of receipt.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q013",
+      "question": "How long are tents covered by the warranty?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:warranty:3",
+        "harbor-goods__voyage-4:warranty:1",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Tents and shelters are covered for 2 years from the date of delivery.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:0\",\"quote\":\"Tents and shelters are covered for 2 years from the date of delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q014",
+      "question": "How long is the warranty on Harbor Line backpacks?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:warranty:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Harbor Line backpacks are covered for 5 years from the date of delivery.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:1\",\"quote\":\"Harbor Line backpacks, our own brand, are covered for 5 years from the date of delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q015",
+      "question": "My tent fabric was damaged by the sun after two seasons of use. Will the warranty pay for it?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:3",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:warranty:6",
+        "harbor-goods__voyage-4:warranty:4",
+        "harbor-goods__voyage-4:warranty:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Probably not. UV damage to tent fabrics is excluded after the first 12 months, even though tents are otherwise covered for 2 years from delivery.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:3\",\"quote\":\"UV damage to tent fabrics is excluded after the first 12 months.\"},{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:0\",\"quote\":\"Tents and shelters are covered for 2 years from the date of delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q016",
+      "question": "What happens to a warranty claim when the repair would cost too much?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:4",
+        "harbor-goods__voyage-4:warranty:5",
+        "harbor-goods__voyage-4:warranty:7",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:warranty:6"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"If the repair would cost more than 60 percent of the price paid, Harbor Goods replaces the product with the same item or the closest current model. If neither repair nor replacement is possible, it refunds the price paid.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:4\",\"quote\":\"If the repair would cost more than 60 percent of the price paid, we replace the product with the same item or the closest current model.\"},{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:4\",\"quote\":\"If neither repair nor replacement is possible, we refund the price paid.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q017",
+      "question": "Which form is used to make a warranty claim?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:6",
+        "harbor-goods__voyage-4:warranty:7",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:returns-policy:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Warranty claims are made with warranty claim form WC-1.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:6\",\"quote\":\"Claims are made with warranty claim form WC-1, which is available from the customer account or from support.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q018",
+      "question": "How long does Harbor Goods keep order records?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:3",
+        "harbor-goods__voyage-4:data-retention:1",
+        "harbor-goods__voyage-4:data-retention:4",
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:data-retention:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Order records, including invoices and payment records, are kept for 7 years after the end of the financial year in which the order was placed, to meet tax and accounting rules.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:1\",\"quote\":\"Order records, including invoices and payment records, are kept for 7 years after the end of the financial year in which the order was placed, to meet tax and accounting rules.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q019",
+      "question": "If I ask Harbor Goods to erase my personal information, how long until it is gone?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:3",
+        "harbor-goods__voyage-4:data-retention:5",
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:data-retention:1",
+        "harbor-goods__voyage-4:data-retention:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"After your identity is verified (within 5 business days), Harbor Goods completes the deletion within 30 days. Backups expire separately, so deletion is complete in every system no later than 35 days after it is made in the live system. Some data, such as tax order records, is kept for the rest of its 7 year period.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:3\",\"quote\":\"We verify the identity of the person making the request within 5 business days\"},{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:3\",\"quote\":\"Once the identity is verified, we complete the deletion within 30 days and send a confirmation email.\"},{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:5\",\"quote\":\"a deletion is complete in every system no later than 35 days after it is made in the live system\"},{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:3\",\"quote\":\"Order records that we must keep for tax purposes are kept for the rest of their 7 year period\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q020",
+      "question": "How long are backups of the order and customer systems kept?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:5",
+        "harbor-goods__voyage-4:data-retention:1",
+        "harbor-goods__voyage-4:data-retention:3",
+        "harbor-goods__voyage-4:data-retention:4",
+        "harbor-goods__voyage-4:data-retention:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Backups of the order and customer systems are kept for 35 days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:5\",\"quote\":\"Backups of the order and customer systems are kept for 35 days.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q021",
+      "question": "What is the minimum order value for free shipping?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4, measured after discounts and before tax.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:1\",\"quote\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4. The threshold is measured after discounts and before tax.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q022",
+      "question": "How soon after I buy something does it leave the warehouse?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:2",
+        "harbor-goods__voyage-4:shipping-policy:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"For in-stock items, handling time is 1 business day. Orders placed before 1:00 PM Eastern on a business day usually leave the same day, and later orders leave the next business day. In peak season, handling may extend to 2 business days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"Our handling time is 1 business day for in-stock items.\"},{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"Orders placed before 1:00 PM Eastern time on a business day usually leave the warehouse the same day, and orders placed after the cut-off leave on the next business day.\"},{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"During the peak season set out in the Holiday Schedule, handling time may extend to 2 business days.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q023",
+      "question": "How much does a standard parcel to Zone 2 cost?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-rates-zones:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:shipping-policy:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:2",
+        "harbor-goods__voyage-4:shipping-rates-zones:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A standard parcel to Zone 2 (up to 5 lb) costs 8.40 USD.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:1\",\"quote\":\"Zone 2 parcels cost 8.40 USD each.\"},{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:1\",\"quote\":\"Standard rates apply to parcels weighing up to 5 lb.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q024",
+      "question": "What is the remote-area surcharge, and does it apply when shipping is free?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-rates-zones:2",
+        "harbor-goods__voyage-4:shipping-policy:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:3",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:promo-price-rules:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The remote-area surcharge is 6.50 USD per parcel for every parcel sent to a postal code on the remote-area list, and it still applies even when the order qualifies for free shipping.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:2\",\"quote\":\"A remote-area surcharge of 6.50 USD per parcel applies to every parcel sent to a postal code on the remote-area list, even when the order qualifies for free shipping.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "question": "What is the heaviest single parcel NorthRoute Parcel will carry?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:carrier-rules:0",
+        "harbor-goods__voyage-4:packing:1",
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:carrier-rules:2",
+        "harbor-goods__voyage-4:shipping-rates-zones:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"NorthRoute Parcel carries single parcels weighing up to 30 lb.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"carrier-rules\",\"chunk_id\":\"harbor-goods__voyage-4:carrier-rules:0\",\"quote\":\"NorthRoute Parcel carries single parcels weighing up to 30 lb.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q026",
+      "question": "Can two promo codes be used on the same order?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:promo-price-rules:0",
+        "harbor-goods__voyage-4:promo-price-rules:1",
+        "harbor-goods__voyage-4:payment-methods:1",
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:returns-policy:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"No. Only one promo code can be used per order, and promo codes cannot be combined with each other.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"promo-price-rules\",\"chunk_id\":\"harbor-goods__voyage-4:promo-price-rules:0\",\"quote\":\"Only one promo code can be used per order.\"},{\"doc_id\":\"promo-price-rules\",\"chunk_id\":\"harbor-goods__voyage-4:promo-price-rules:0\",\"quote\":\"Promo codes cannot be combined with each other or with the employee discount.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q027",
+      "question": "Once my returned item has been checked, how soon do I get my money back?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:refunds-chargebacks:0",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:refunds-chargebacks:1",
+        "harbor-goods__voyage-4:returns-policy:0",
+        "harbor-goods__voyage-4:refunds-chargebacks:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Refunds are issued within 5 business days after the returned item passes inspection. Card refunds can then take up to 10 business days to appear on your statement, while store credit appears within 1 hour of being issued.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:0\",\"quote\":\"Refunds are issued within 5 business days after the returned item passes inspection.\"},{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:0\",\"quote\":\"Card refunds can take up to 10 business days to appear on the customer's statement, depending on the bank. Store credit refunds appear in the customer account within 1 hour of being issued.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q028",
+      "question": "Which chargebacks does the finance team accept without contesting them?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:refunds-chargebacks:2",
+        "harbor-goods__voyage-4:refunds-chargebacks:1",
+        "harbor-goods__voyage-4:refunds-chargebacks:3",
+        "harbor-goods__voyage-4:refunds-chargebacks:0",
+        "harbor-goods__voyage-4:invoice-rules:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Chargebacks for amounts under 25 USD are accepted without a contest, though finance still records them to spot repeat patterns.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:2\",\"quote\":\"Chargebacks for amounts under 25 USD are accepted without a contest, because the cost of responding is higher than the amount.\"},{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:2\",\"quote\":\"The finance team still records them to spot repeat patterns.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q029",
+      "question": "Who must approve a purchase order worth 12,000 USD?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:purchase-orders:2",
+        "harbor-goods__voyage-4:purchase-orders:0",
+        "harbor-goods__voyage-4:purchase-orders:3",
+        "harbor-goods__voyage-4:invoice-rules:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A PO above 10,000 USD, such as one worth 12,000 USD, needs approval from both the Operations Manager and the Finance Director.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:1\",\"quote\":\"Purchase orders above 10,000 USD need approval from both the Operations Manager and the Finance Director.\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"Purchase orders above 10,000 USD need approval from both the Operations Manager and the Finance Director, which covers a 12,000 USD PO.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:1\",\"quote\":\"Purchase orders above 10,000 USD need approval from both the Operations Manager and the Finance Director.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q030",
+      "question": "What format do purchase order numbers use?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:purchase-orders:0",
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4",
+        "harbor-goods__voyage-4:supplier-terms-alpine:4",
+        "harbor-goods__voyage-4:invoice-rules:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Purchase order numbers use the format PO-2026-0001, counting up through the year.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:0\",\"quote\":\"Each PO gets a number in the format PO-2026-0001, counting up through the year.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q031",
+      "question": "What price difference is allowed in the three-way match?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:1",
+        "harbor-goods__voyage-4:invoice-rules:0",
+        "harbor-goods__voyage-4:invoice-rules:3",
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:receiving-goods:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A price difference is accepted if it is no more than 2 percent of the line value or 50 USD, whichever is lower. Any larger difference is sent to the buyer to resolve with the supplier.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:1\",\"quote\":\"A price difference is accepted if it is no more than 2 percent of the line value or 50 USD, whichever is lower.\"},{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:1\",\"quote\":\"Any larger difference is sent to the buyer, who must resolve it with the supplier within 5 business days.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q032",
+      "question": "On which day of the week are supplier invoices paid?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:invoice-rules:1",
+        "harbor-goods__voyage-4:invoice-rules:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Supplier invoices are paid in payment runs that take place every Thursday.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:2\",\"quote\":\"Payment runs take place every Thursday.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q033",
+      "question": "Do Harbor Goods gift cards expire?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:payment-methods:1",
+        "harbor-goods__voyage-4:payment-methods:0",
+        "harbor-goods__voyage-4:promo-price-rules:0",
+        "harbor-goods__voyage-4:returns-policy:3",
+        "harbor-goods__voyage-4:returns-policy:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"No, Harbor Goods gift cards never expire.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"payment-methods\",\"chunk_id\":\"harbor-goods__voyage-4:payment-methods:1\",\"quote\":\"gift cards never expire\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q034",
+      "question": "How often are class A SKUs counted?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:inventory-counts:0",
+        "harbor-goods__voyage-4:inventory-counts:1",
+        "harbor-goods__voyage-4:inventory-counts:3",
+        "harbor-goods__voyage-4:receiving-goods:3",
+        "harbor-goods__voyage-4:inventory-counts:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Class A SKUs are counted every week.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"inventory-counts\",\"chunk_id\":\"harbor-goods__voyage-4:inventory-counts:0\",\"quote\":\"Class A SKUs are counted every week.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q035",
+      "question": "When does a stock count difference mean someone else has to count the bin again?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:inventory-counts:1",
+        "harbor-goods__voyage-4:inventory-counts:2",
+        "harbor-goods__voyage-4:inventory-counts:3",
+        "harbor-goods__voyage-4:packing:3",
+        "harbor-goods__voyage-4:inventory-counts:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A recount by a second counter is triggered when the variance is more than 3 percent of the system quantity. For SKUs with a system quantity under 20 units, any difference of 2 units or more triggers a recount.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"inventory-counts\",\"chunk_id\":\"harbor-goods__voyage-4:inventory-counts:1\",\"quote\":\"A variance of more than 3 percent of the system quantity triggers a recount by a second counter.\"},{\"doc_id\":\"inventory-counts\",\"chunk_id\":\"harbor-goods__voyage-4:inventory-counts:1\",\"quote\":\"For SKUs with a system quantity under 20 units, any difference of 2 units or more triggers a recount.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q036",
+      "question": "How soon must visible transport damage on a supplier delivery be reported?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:receiving-goods:2",
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:receiving-goods:0",
+        "harbor-goods__voyage-4:receiving-goods:1",
+        "harbor-goods__voyage-4:damaged-goods:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Visible transport damage on a supplier delivery must be reported to the carrier and the supplier within 48 hours of delivery, with photos of the damaged cartons and contents.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"receiving-goods\",\"chunk_id\":\"harbor-goods__voyage-4:receiving-goods:2\",\"quote\":\"Visible transport damage must be reported to the carrier and the supplier within 48 hours of delivery, with photos of the damaged cartons and contents.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q037",
+      "question": "How much empty space should a packer leave around the items when picking a box?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:packing:0",
+        "harbor-goods__voyage-4:packing:1",
+        "harbor-goods__voyage-4:packing:3",
+        "harbor-goods__voyage-4:packing:2",
+        "harbor-goods__voyage-4:damaged-goods:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Use the smallest box that leaves at least 2 inches of padding between the items and every side of the box.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"packing\",\"chunk_id\":\"harbor-goods__voyage-4:packing:0\",\"quote\":\"Use the smallest box that leaves at least 2 inches of padding between the items and every side of the box.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q038",
+      "question": "How many photos must a customer send when reporting transit damage?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:warranty:6",
+        "harbor-goods__voyage-4:receiving-goods:2",
+        "harbor-goods__voyage-4:damaged-goods:3",
+        "harbor-goods__voyage-4:damaged-goods:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A customer reporting transit damage must include at least 3 photos: one of the outer box, one of the packing inside, and one of the damaged item.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"damaged-goods\",\"chunk_id\":\"harbor-goods__voyage-4:damaged-goods:0\",\"quote\":\"The report must include at least 3 photos: one of the outer box, one of the packing inside, and one of the damaged item.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q039",
+      "question": "What is the first-response target for support emails?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:support-hours-sla:1",
+        "harbor-goods__voyage-4:support-hours-sla:0",
+        "harbor-goods__voyage-4:support-hours-sla:2",
+        "harbor-goods__voyage-4:support-hours-sla:3",
+        "harbor-goods__voyage-4:warranty:6"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The first-response target for email is 4 business hours.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"support-hours-sla\",\"chunk_id\":\"harbor-goods__voyage-4:support-hours-sla:1\",\"quote\":\"The first-response target for email is 4 business hours.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q040",
+      "question": "What is the last order day for standard delivery before Christmas 2026?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:holiday-schedule:2",
+        "harbor-goods__voyage-4:holiday-schedule:0",
+        "harbor-goods__voyage-4:holiday-schedule:1",
+        "harbor-goods__voyage-4:holiday-schedule:3",
+        "harbor-goods__voyage-4:shipping-policy:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The last order day for standard delivery before Christmas 2026 is Wednesday 16 December 2026 (Zone 5 orders for Alaska and Hawaii should be placed by Friday 11 December 2026).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:2\",\"quote\":\"The last order day for standard delivery is Wednesday 16 December 2026.\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:2\",\"quote\":\"Zone 5 orders for Alaska and Hawaii should be placed by Friday 11 December 2026 for standard delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q041",
+      "question": "When is a Trailworks invoice due, and what late fee can Trailworks charge if Harbor Goods pays after that?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:2",
+        "harbor-goods__voyage-4:invoice-rules:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A Trailworks invoice is due net 45 from the invoice date. If Harbor Goods pays after the due date, suppliers may charge a late fee of 1.5 percent per month on the overdue amount, worked out per full month of delay.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:1\",\"quote\":\"Payment is due net 45 from the invoice date.\"},{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:2\",\"quote\":\"Suppliers may charge a late fee of 1.5 percent per month on any invoice amount that Harbor Goods pays after the due date. The fee is worked out per full month of delay.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q042",
+      "question": "Who has to approve a purchase order placed at exactly the Alpinewood minimum order value?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:purchase-orders:2",
+        "harbor-goods__voyage-4:purchase-orders:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The Alpinewood minimum order value is 2,500 USD per purchase order, and a PO above 1,000 USD and up to 10,000 USD needs approval from the Operations Manager. Note that the approval limit is based on the total including freight, while the minimum is measured before freight.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:1\",\"quote\":\"The minimum order value is 2,500 USD per purchase order, measured before freight.\"},{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:1\",\"quote\":\"Purchase orders above 1,000 USD and up to 10,000 USD need approval from the Operations Manager.\"},{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:1\",\"quote\":\"The approval limit is based on the total value of the PO including freight and before any early payment discount.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q043",
+      "question": "A customer orders 90 USD of gear by standard service to a Zone 3 postal code on the remote-area list. What do they pay for shipping?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-rates-zones:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:2",
+        "harbor-goods__voyage-4:shipping-policy:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:shipping-rates-zones:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4, but the remote-area surcharge of 6.50 USD per parcel still applies, so they pay 6.50 USD for shipping (per parcel).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:1\",\"quote\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4.\"},{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:2\",\"quote\":\"A remote-area surcharge of 6.50 USD per parcel applies to every parcel sent to a postal code on the remote-area list, even when the order qualifies for free shipping.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q044",
+      "question": "After a change-of-mind return reaches the warehouse, how soon is it inspected and what is deducted from the refund?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:refunds-chargebacks:0",
+        "harbor-goods__voyage-4:returns-policy:1",
+        "harbor-goods__voyage-4:returns-policy:2",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:refunds-chargebacks:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Returned items are inspected within 3 business days of arriving at the warehouse. For change-of-mind returns, a flat return label fee of 6.95 USD is deducted from the refund.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:0\",\"quote\":\"Returned items are inspected within 3 business days of arriving at the warehouse.\"},{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:1\",\"quote\":\"For change-of-mind returns, a flat return label fee of 6.95 USD is deducted from the refund.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q045",
+      "question": "How long is the customer warranty on Harbor Line backpacks, and for how long does Trailworks reimburse those claims?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:warranty:1",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:warranty:6"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Harbor Line backpacks are covered by the customer warranty for 5 years from the date of delivery. Trailworks reimburses approved warranty claims on Harbor Line backpacks for up to 5 years as well.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:1\",\"quote\":\"Harbor Line backpacks, our own brand, are covered for 5 years from the date of delivery.\"},{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:5\",\"quote\":\"and for up to 5 years for Harbor Line backpacks\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q046",
+      "question": "What is the heaviest carton a packer may send with NorthRoute, and which carrier takes heavier shipments?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:carrier-rules:0",
+        "harbor-goods__voyage-4:packing:1",
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:carrier-rules:2",
+        "harbor-goods__voyage-4:shipping-rates-zones:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A single carton must not weigh more than 30 lb to travel with NorthRoute Parcel. Heavier shipments, from 30.1 lb to 150 lb, go by Swiftline Freight.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"packing\",\"chunk_id\":\"harbor-goods__voyage-4:packing:1\",\"quote\":\"A single carton must not weigh more than 30 lb, so that it can travel with NorthRoute Parcel.\"},{\"doc_id\":\"carrier-rules\",\"chunk_id\":\"harbor-goods__voyage-4:carrier-rules:0\",\"quote\":\"Swiftline Freight carries shipments weighing from 30.1 lb to 150 lb\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q047",
+      "question": "What is the normal handling time, and how long can it be during the 2026 peak season?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:holiday-schedule:1",
+        "harbor-goods__voyage-4:shipping-policy:2",
+        "harbor-goods__voyage-4:holiday-schedule:3",
+        "harbor-goods__voyage-4:shipping-policy:1",
+        "harbor-goods__voyage-4:returns-policy:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Normal handling time is 1 business day for in-stock items, and during the 2026 peak season it may extend to 2 business days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"Our handling time is 1 business day for in-stock items.\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:1\",\"quote\":\"During peak season, handling time may extend to 2 business days\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"Normal handling time is 1 business day for in-stock items, and during peak season it may extend to 2 business days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"Our handling time is 1 business day for in-stock items.\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:1\",\"quote\":\"During peak season, handling time may extend to 2 business days\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q048",
+      "question": "How long does a customer have to report a parcel that arrived broken, and how fast should support first reply to that ticket?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:support-hours-sla:1",
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:damaged-goods:2",
+        "harbor-goods__voyage-4:support-hours-sla:0",
+        "harbor-goods__voyage-4:warranty:6"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Customers must report transit damage within 7 days of delivery. A damaged order is a priority ticket, so the first response should come within 2 business hours.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"damaged-goods\",\"chunk_id\":\"harbor-goods__voyage-4:damaged-goods:0\",\"quote\":\"Customers must report transit damage within 7 days of delivery.\"},{\"doc_id\":\"support-hours-sla\",\"chunk_id\":\"harbor-goods__voyage-4:support-hours-sla:1\",\"quote\":\"Tickets about a lost parcel, a damaged order, a payment taken twice or a safety concern with a product are priority tickets. Priority tickets get a first response within 2 business hours.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q049",
+      "question": "Which warehouse document must agree with the invoice before accounts payable pays a supplier, and when is it created?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:1",
+        "harbor-goods__voyage-4:invoice-rules:0",
+        "harbor-goods__voyage-4:receiving-goods:3",
+        "harbor-goods__voyage-4:invoice-rules:3",
+        "harbor-goods__voyage-4:purchase-orders:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The receiving report must agree with the invoice (along with the purchase order) in the three-way match before payment. The receiver enters it in the inventory system on the day of delivery.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:1\",\"quote\":\"The invoice, the purchase order and the receiving report must agree on the items, quantities and prices.\"},{\"doc_id\":\"receiving-goods\",\"chunk_id\":\"harbor-goods__voyage-4:receiving-goods:3\",\"quote\":\"The receiver enters a receiving report in the inventory system on the day of delivery\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q050",
+      "question": "Are paid supplier invoices and customer order records kept for the same length of time?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:1",
+        "harbor-goods__voyage-4:invoice-rules:3",
+        "harbor-goods__voyage-4:data-retention:4",
+        "harbor-goods__voyage-4:data-retention:3",
+        "harbor-goods__voyage-4:data-retention:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Yes, both are kept for 7 years: paid invoices and their matching documents are stored in the finance system for 7 years, and customer order records are kept for 7 years after the end of the financial year in which the order was placed.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:3\",\"quote\":\"Paid invoices and their matching documents are stored in the finance system for 7 years.\"},{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:1\",\"quote\":\"Order records, including invoices and payment records, are kept for 7 years after the end of the financial year in which the order was placed\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q051",
+      "question": "Does Harbor Goods offer a student discount?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:2",
+        "harbor-goods__voyage-4:promo-price-rules:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:payment-methods:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q052",
+      "question": "What is the name of the Harbor Goods CEO?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:carrier-rules:0",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q053",
+      "question": "How many points do customers earn in the Harbor Goods loyalty program?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:payment-methods:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:promo-price-rules:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q054",
+      "question": "Can customers collect their orders by curbside pickup at the warehouse?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:shipping-policy:2",
+        "harbor-goods__voyage-4:shipping-policy:4",
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q055",
+      "question": "Does Harbor Goods buy carbon offsets for its shipments?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:carrier-rules:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q056",
+      "question": "What hourly wage does Harbor Goods pay its warehouse packers?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:packing:3",
+        "harbor-goods__voyage-4:packing:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q057",
+      "question": "Does Harbor Goods sell bicycles or bicycle parts?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4",
+        "harbor-goods__voyage-4:warranty:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q058",
+      "question": "Is there a Harbor Goods mobile app for placing orders?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:payment-methods:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:payment-methods:1",
+        "harbor-goods__voyage-4:data-retention:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q059",
+      "question": "In what year was Harbor Goods founded?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:data-retention:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q060",
+      "question": "What reward do customers get for a referral that brings in a new customer?",
+      "mode": "hybrid_rerank",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:promo-price-rules:1",
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:promo-price-rules:0",
+        "harbor-goods__voyage-4:payment-methods:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q001",
+      "question": "How many days do customers have to return unused items?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy-2025:0",
+        "harbor-goods__voyage-4:returns-policy:0",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:holiday-schedule:3",
+        "harbor-goods__voyage-4:damaged-goods:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Under the current Returns Policy, customers may return unused items within 30 days of delivery (the longer window in the Holiday Schedule applies to items delivered 15 November to 24 December 2026). The 45-day window is from the superseded 2025 policy.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:0\",\"quote\":\"Customers may return unused items within 30 days of delivery.\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:3\",\"quote\":\"Items delivered between 15 November and 24 December 2026 can be returned until 31 January 2027\"},{\"doc_id\":\"returns-policy-2025\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy-2025:0\",\"quote\":\"Customers may return unused items within 45 days of delivery.\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"Under the current Returns Policy, customers may return unused items within 30 days of delivery. Items delivered between 15 November and 24 December 2026 can be returned until 31 January 2027.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:0\",\"quote\":\"Customers may return unused items within 30 days of delivery.\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:3\",\"quote\":\"Items delivered between 15 November and 24 December 2026 can be returned until 31 January 2027\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q002",
+      "question": "Who covers the postage when I send back something I simply changed my mind about?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy:1",
+        "harbor-goods__voyage-4:returns-policy-2025:1",
+        "harbor-goods__voyage-4:returns-policy:2",
+        "harbor-goods__voyage-4:damaged-goods:1",
+        "harbor-goods__voyage-4:returns-policy:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Under the current returns policy, for change-of-mind returns a flat return label fee of 6.95 USD is deducted from the refund. Customers may use their own carrier instead, but then they pay that carrier directly and carry the risk of loss until the parcel reaches the warehouse.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:2\",\"quote\":\"For change-of-mind returns, a flat return label fee of 6.95 USD is deducted from the refund.\"},{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:2\",\"quote\":\"Customers may use their own carrier instead, but then they pay that carrier directly and carry the risk of loss until the parcel reaches the warehouse.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q003",
+      "question": "What restocking fee applies to opened electronics?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy:3",
+        "harbor-goods__voyage-4:returns-policy:2",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:warranty:5",
+        "harbor-goods__voyage-4:returns-policy:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Opened electronics such as GPS units and satellite messengers carry a 15 percent restocking fee unless they are defective, per the current Returns Policy.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:3\",\"quote\":\"Opened electronics, such as GPS units and satellite messengers, carry a 15 percent restocking fee unless they are defective.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q004",
+      "question": "Can a customer exchange an item for a different size?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy-2025:1",
+        "harbor-goods__voyage-4:returns-policy:2",
+        "harbor-goods__voyage-4:damaged-goods:1",
+        "harbor-goods__voyage-4:returns-policy:1",
+        "harbor-goods__voyage-4:warranty:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Yes. Under the current Returns Policy, each order includes one free exchange for a different size or color of the same item, shipped by standard service at no charge. A second exchange on the same order is treated as a return and a new order.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:2\",\"quote\":\"Each order includes one free exchange for a different size or color of the same item. The exchange item ships by standard service at no charge. A second exchange on the same order is treated as a return and a new order.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q005",
+      "question": "When was the 2025 returns policy superseded, and by which version?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:returns-policy-2025:0",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:returns-policy-2025:1",
+        "harbor-goods__voyage-4:returns-policy:0",
+        "harbor-goods__voyage-4:holiday-schedule:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The 2025 returns policy was superseded on 2026-01-15 by the Returns Policy version 2026-01.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy-2025\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy-2025:0\",\"quote\":\"Superseded on 2026-01-15 by the Returns Policy version 2026-01.\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"It was superseded on 2026-01-15 by the Returns Policy version 2026-01.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"returns-policy-2025\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy-2025:0\",\"quote\":\"Superseded on 2026-01-15 by the Returns Policy version 2026-01.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q006",
+      "question": "What are the payment terms with Alpinewood?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:2",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Payment is due net 30 from the invoice date, and Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date. Payment is made by bank transfer in US dollars.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:1\",\"quote\":\"Payment is due net 30 from the invoice date. Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date.\"},{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:2\",\"quote\":\"Payment is made by bank transfer in US dollars.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q007",
+      "question": "What are the payment terms with Trailworks?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Payment to Trailworks is due net 45 from the invoice date, and Trailworks does not offer an early payment discount.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:1\",\"quote\":\"Payment is due net 45 from the invoice date. Trailworks does not offer an early payment discount.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q008",
+      "question": "What is the minimum order value for a Trailworks purchase order?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The minimum order value for a Trailworks purchase order is 4,000 USD, measured before freight.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:1\",\"quote\":\"The minimum order value is 4,000 USD per purchase order, measured before freight.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q009",
+      "question": "What does Alpinewood owe Harbor Goods when a delivery is late?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:4",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:2",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Alpinewood credits Harbor Goods 1 percent of the purchase order value for each full week of delay, capped at 5 percent of the purchase order value. Harbor Goods may also cancel any part of an order more than 4 weeks late without paying for it.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:3\",\"quote\":\"Alpinewood credits Harbor Goods 1 percent of the purchase order value for each full week of delay, capped at 5 percent of the purchase order value.\"},{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:3\",\"quote\":\"Harbor Goods may cancel any part of an order that is more than 4 weeks late without paying for it.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q010",
+      "question": "What is the standard lead time for Trailworks orders?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The standard lead time for Trailworks orders is 35 calendar days from confirmation of the purchase order to delivery at the Harbor Goods warehouse (50 calendar days for Harbor Line backpacks).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:3\",\"quote\":\"The standard lead time is 35 calendar days from confirmation of the purchase order to delivery at the Harbor Goods warehouse. For Harbor Line backpacks, the lead time is 50 calendar days.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q011",
+      "question": "Do we get anything off if we settle an Alpinewood bill quickly?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-alpine:2",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Yes. Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:2\",\"quote\":\"Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q012",
+      "question": "How long does Harbor Goods have to report manufacturing defects to Trailworks?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:supplier-terms-alpine:5",
+        "harbor-goods__voyage-4:warranty:6",
+        "harbor-goods__voyage-4:receiving-goods:2",
+        "harbor-goods__voyage-4:damaged-goods:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Harbor Goods must report manufacturing defects to Trailworks within 30 days of receipt.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:5\",\"quote\":\"Defects Harbor Goods reports manufacturing defects to Trailworks within 30 days of receipt.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q013",
+      "question": "How long are tents covered by the warranty?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:warranty:3",
+        "harbor-goods__voyage-4:warranty:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:warranty:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Tents and shelters are covered for 2 years from the date of delivery.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:0\",\"quote\":\"Tents and shelters are covered for 2 years from the date of delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q014",
+      "question": "How long is the warranty on Harbor Line backpacks?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:1",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:warranty:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Harbor Line backpacks are covered for 5 years from the date of delivery.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:1\",\"quote\":\"Harbor Line backpacks, our own brand, are covered for 5 years from the date of delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q015",
+      "question": "My tent fabric was damaged by the sun after two seasons of use. Will the warranty pay for it?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:3",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:warranty:4",
+        "harbor-goods__voyage-4:warranty:1",
+        "harbor-goods__voyage-4:warranty:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Probably not. UV damage to tent fabrics is excluded after the first 12 months, so sun damage after two seasons of use would likely not be covered, even though tents have 2 years of coverage from delivery. The excerpts don't say how long two seasons is in months, so I can't be certain of the timing.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:3\",\"quote\":\"UV damage to tent fabrics is excluded after the first 12 months.\"},{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:0\",\"quote\":\"Tents and shelters are covered for 2 years from the date of delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q016",
+      "question": "What happens to a warranty claim when the repair would cost too much?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:4",
+        "harbor-goods__voyage-4:warranty:5",
+        "harbor-goods__voyage-4:warranty:6",
+        "harbor-goods__voyage-4:warranty:7",
+        "harbor-goods__voyage-4:warranty:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"If the repair would cost more than 60 percent of the price paid, Harbor Goods replaces the product with the same item or the closest current model. If neither repair nor replacement is possible, it refunds the price paid.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:4\",\"quote\":\"If the repair would cost more than 60 percent of the price paid, we replace the product with the same item or the closest current model.\"},{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:4\",\"quote\":\"If neither repair nor replacement is possible, we refund the price paid.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q017",
+      "question": "Which form is used to make a warranty claim?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:warranty:6",
+        "harbor-goods__voyage-4:warranty:7",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:warranty:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Warranty claims are made with warranty claim form WC-1, available from the customer account or from support.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:6\",\"quote\":\"Claims are made with warranty claim form WC-1, which is available from the customer account or from support.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q018",
+      "question": "How long does Harbor Goods keep order records?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:data-retention:3",
+        "harbor-goods__voyage-4:data-retention:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:4",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Order records, including invoices and payment records, are kept for 7 years after the end of the financial year in which the order was placed.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:1\",\"quote\":\"Order records, including invoices and payment records, are kept for 7 years after the end of the financial year in which the order was placed\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q019",
+      "question": "If I ask Harbor Goods to erase my personal information, how long until it is gone?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:3",
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:data-retention:4",
+        "harbor-goods__voyage-4:data-retention:2",
+        "harbor-goods__voyage-4:data-retention:6"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Harbor Goods verifies your identity within 5 business days, and once verified it completes the deletion within 30 days. Some data, such as tax order records, is kept for the rest of its 7 year period, with name and contact details replaced by a reference number where the law allows.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:3\",\"quote\":\"We verify the identity of the person making the request within 5 business days\"},{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:3\",\"quote\":\"Once the identity is verified, we complete the deletion within 30 days and send a confirmation email.\"},{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:3\",\"quote\":\"Order records that we must keep for tax purposes are kept for the rest of their 7 year period, but the name and contact details on them are replaced with a reference number where the law allows.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q020",
+      "question": "How long are backups of the order and customer systems kept?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:5",
+        "harbor-goods__voyage-4:data-retention:1",
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:data-retention:4",
+        "harbor-goods__voyage-4:data-retention:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Backups of the order and customer systems are kept for 35 days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:5\",\"quote\":\"Backups of the order and customer systems are kept for 35 days.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q021",
+      "question": "What is the minimum order value for free shipping?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:shipping-rates-zones:3",
+        "harbor-goods__voyage-4:promo-price-rules:0",
+        "harbor-goods__voyage-4:carrier-rules:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4, measured after discounts and before tax. Zone 5 orders never qualify.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:1\",\"quote\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4. The threshold is measured after discounts and before tax. Orders to Zone 5 never qualify for free shipping\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q022",
+      "question": "How soon after I buy something does it leave the warehouse?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:2",
+        "harbor-goods__voyage-4:shipping-policy:3",
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:3",
+        "harbor-goods__voyage-4:holiday-schedule:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Handling time for in-stock items is 1 business day, and orders placed before 1:00 PM Eastern on a business day usually leave the same day. During peak season (27 November to 24 December 2026) handling may extend to 2 business days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"Our handling time is 1 business day for in-stock items. Orders placed before 1:00 PM Eastern time on a business day usually leave the warehouse the same day\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:1\",\"quote\":\"Peak season runs from Friday 27 November to Thursday 24 December 2026. During peak season, handling time may extend to 2 business days\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q023",
+      "question": "How much does a standard parcel to Zone 2 cost?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-rates-zones:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:shipping-rates-zones:2",
+        "harbor-goods__voyage-4:shipping-rates-zones:3",
+        "harbor-goods__voyage-4:shipping-policy:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A standard parcel to Zone 2 costs 8.40 USD each (for parcels up to 5 lb).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:1\",\"quote\":\"Zone 2 parcels cost 8.40 USD each.\"},{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:1\",\"quote\":\"Standard rates apply to parcels weighing up to 5 lb.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q024",
+      "question": "What is the remote-area surcharge, and does it apply when shipping is free?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-rates-zones:2",
+        "harbor-goods__voyage-4:shipping-policy:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:shipping-rates-zones:3",
+        "harbor-goods__voyage-4:shipping-policy:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The remote-area surcharge is 6.50 USD per parcel for every parcel sent to a postal code on the remote-area list, and it applies even when the order qualifies for free shipping.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:2\",\"quote\":\"A remote-area surcharge of 6.50 USD per parcel applies to every parcel sent to a postal code on the remote-area list, even when the order qualifies for free shipping.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "question": "What is the heaviest single parcel NorthRoute Parcel will carry?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:carrier-rules:0",
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:carrier-rules:2",
+        "harbor-goods__voyage-4:packing:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"NorthRoute Parcel carries single parcels weighing up to 30 lb.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"carrier-rules\",\"chunk_id\":\"harbor-goods__voyage-4:carrier-rules:0\",\"quote\":\"NorthRoute Parcel carries single parcels weighing up to 30 lb.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q026",
+      "question": "Can two promo codes be used on the same order?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:promo-price-rules:0",
+        "harbor-goods__voyage-4:promo-price-rules:1",
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:payment-methods:1",
+        "harbor-goods__voyage-4:promo-price-rules:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"No. Only one promo code can be used per order, and promo codes cannot be combined with each other.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"promo-price-rules\",\"chunk_id\":\"harbor-goods__voyage-4:promo-price-rules:0\",\"quote\":\"Only one promo code can be used per order.\"},{\"doc_id\":\"promo-price-rules\",\"chunk_id\":\"harbor-goods__voyage-4:promo-price-rules:0\",\"quote\":\"Promo codes cannot be combined with each other or with the employee discount.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q027",
+      "question": "Once my returned item has been checked, how soon do I get my money back?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:refunds-chargebacks:0",
+        "harbor-goods__voyage-4:refunds-chargebacks:1",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:damaged-goods:1",
+        "harbor-goods__voyage-4:returns-policy:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Refunds are issued within 5 business days after the returned item passes inspection. Card refunds can then take up to 10 business days to appear on your statement, depending on the bank.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:0\",\"quote\":\"Refunds are issued within 5 business days after the returned item passes inspection.\"},{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:0\",\"quote\":\"Card refunds can take up to 10 business days to appear on the customer's statement, depending on the bank.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q028",
+      "question": "Which chargebacks does the finance team accept without contesting them?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:refunds-chargebacks:2",
+        "harbor-goods__voyage-4:refunds-chargebacks:3",
+        "harbor-goods__voyage-4:refunds-chargebacks:1",
+        "harbor-goods__voyage-4:refunds-chargebacks:0",
+        "harbor-goods__voyage-4:payment-methods:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Chargebacks for amounts under 25 USD are accepted without a contest, because the cost of responding is higher than the amount. Finance still records them to spot repeat patterns.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:2\",\"quote\":\"Chargebacks for amounts under 25 USD are accepted without a contest, because the cost of responding is higher than the amount.\"},{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:2\",\"quote\":\"The finance team still records them to spot repeat patterns.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q029",
+      "question": "Who must approve a purchase order worth 12,000 USD?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:purchase-orders:2",
+        "harbor-goods__voyage-4:purchase-orders:0",
+        "harbor-goods__voyage-4:purchase-orders:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A purchase order above 10,000 USD, such as one worth 12,000 USD, needs approval from both the Operations Manager and the Finance Director.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:1\",\"quote\":\"Purchase orders above 10,000 USD need approval from both the Operations Manager and the Finance Director.\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"Purchase orders above 10,000 USD need approval from both the Operations Manager and the Finance Director, so a 12,000 USD PO requires both.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:1\",\"quote\":\"Purchase orders above 10,000 USD need approval from both the Operations Manager and the Finance Director.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q030",
+      "question": "What format do purchase order numbers use?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:purchase-orders:0",
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:purchase-orders:3",
+        "harbor-goods__voyage-4:purchase-orders:2",
+        "harbor-goods__voyage-4:invoice-rules:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"PO numbers use the format PO-2026-0001, counting up through the year.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:0\",\"quote\":\"Each PO gets a number in the format PO-2026-0001, counting up through the year.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q031",
+      "question": "What price difference is allowed in the three-way match?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:1",
+        "harbor-goods__voyage-4:promo-price-rules:2",
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:invoice-rules:0",
+        "harbor-goods__voyage-4:invoice-rules:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A price difference is accepted if it is no more than 2 percent of the line value or 50 USD, whichever is lower. Any larger difference goes to the buyer, who must resolve it with the supplier within 5 business days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:1\",\"quote\":\"A price difference is accepted if it is no more than 2 percent of the line value or 50 USD, whichever is lower.\"},{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:1\",\"quote\":\"Any larger difference is sent to the buyer, who must resolve it with the supplier within 5 business days.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q032",
+      "question": "On which day of the week are supplier invoices paid?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:2",
+        "harbor-goods__voyage-4:invoice-rules:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:2",
+        "harbor-goods__voyage-4:invoice-rules:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Supplier invoices are paid in payment runs every Thursday.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:2\",\"quote\":\"Payment runs take place every Thursday.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q033",
+      "question": "Do Harbor Goods gift cards expire?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:payment-methods:1",
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:4",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4",
+        "harbor-goods__voyage-4:data-retention:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"No, Harbor Goods gift cards never expire.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"payment-methods\",\"chunk_id\":\"harbor-goods__voyage-4:payment-methods:1\",\"quote\":\"gift cards never expire\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q034",
+      "question": "How often are class A SKUs counted?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:inventory-counts:0",
+        "harbor-goods__voyage-4:inventory-counts:1",
+        "harbor-goods__voyage-4:inventory-counts:3",
+        "harbor-goods__voyage-4:inventory-counts:2",
+        "harbor-goods__voyage-4:receiving-goods:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Class A SKUs are counted every week.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"inventory-counts\",\"chunk_id\":\"harbor-goods__voyage-4:inventory-counts:0\",\"quote\":\"Class A SKUs are counted every week.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q035",
+      "question": "When does a stock count difference mean someone else has to count the bin again?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:inventory-counts:3",
+        "harbor-goods__voyage-4:inventory-counts:2",
+        "harbor-goods__voyage-4:inventory-counts:1",
+        "harbor-goods__voyage-4:inventory-counts:0",
+        "harbor-goods__voyage-4:receiving-goods:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A second counter recounts when the variance is more than 3 percent of the system quantity. For SKUs with a system quantity under 20 units, any difference of 2 units or more triggers a recount.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"inventory-counts\",\"chunk_id\":\"harbor-goods__voyage-4:inventory-counts:1\",\"quote\":\"A variance of more than 3 percent of the system quantity triggers a recount by a second counter. For SKUs with a system quantity under 20 units, any difference of 2 units or more triggers a recount.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q036",
+      "question": "How soon must visible transport damage on a supplier delivery be reported?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:receiving-goods:2",
+        "harbor-goods__voyage-4:damaged-goods:2",
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:receiving-goods:0",
+        "harbor-goods__voyage-4:receiving-goods:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Visible transport damage must be reported to the carrier and the supplier within 48 hours of delivery, with photos of the damaged cartons and contents.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"receiving-goods\",\"chunk_id\":\"harbor-goods__voyage-4:receiving-goods:2\",\"quote\":\"Visible transport damage must be reported to the carrier and the supplier within 48 hours of delivery, with photos of the damaged cartons and contents.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q037",
+      "question": "How much empty space should a packer leave around the items when picking a box?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:packing:0",
+        "harbor-goods__voyage-4:packing:3",
+        "harbor-goods__voyage-4:packing:1",
+        "harbor-goods__voyage-4:receiving-goods:1",
+        "harbor-goods__voyage-4:packing:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Use the smallest box that leaves at least 2 inches of padding between the items and every side of the box.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"packing\",\"chunk_id\":\"harbor-goods__voyage-4:packing:0\",\"quote\":\"Use the smallest box that leaves at least 2 inches of padding between the items and every side of the box.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q038",
+      "question": "How many photos must a customer send when reporting transit damage?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:damaged-goods:2",
+        "harbor-goods__voyage-4:receiving-goods:2",
+        "harbor-goods__voyage-4:damaged-goods:4",
+        "harbor-goods__voyage-4:damaged-goods:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The report must include at least 3 photos: one of the outer box, one of the packing inside, and one of the damaged item.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"damaged-goods\",\"chunk_id\":\"harbor-goods__voyage-4:damaged-goods:0\",\"quote\":\"The report must include at least 3 photos: one of the outer box, one of the packing inside, and one of the damaged item.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q039",
+      "question": "What is the first-response target for support emails?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:support-hours-sla:1",
+        "harbor-goods__voyage-4:support-hours-sla:0",
+        "harbor-goods__voyage-4:support-hours-sla:2",
+        "harbor-goods__voyage-4:support-hours-sla:3",
+        "harbor-goods__voyage-4:warranty:7"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The first-response target for email is 4 business hours.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"support-hours-sla\",\"chunk_id\":\"harbor-goods__voyage-4:support-hours-sla:1\",\"quote\":\"The first-response target for email is 4 business hours.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q040",
+      "question": "What is the last order day for standard delivery before Christmas 2026?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:holiday-schedule:2",
+        "harbor-goods__voyage-4:holiday-schedule:1",
+        "harbor-goods__voyage-4:holiday-schedule:0",
+        "harbor-goods__voyage-4:holiday-schedule:3",
+        "harbor-goods__voyage-4:shipping-policy:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The last order day for standard delivery before Christmas 2026 is Wednesday 16 December 2026 (Zone 5 orders for Alaska and Hawaii should be placed by Friday 11 December 2026).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:2\",\"quote\":\"The last order day for standard delivery is Wednesday 16 December 2026.\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:2\",\"quote\":\"Zone 5 orders for Alaska and Hawaii should be placed by Friday 11 December 2026 for standard delivery.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q041",
+      "question": "When is a Trailworks invoice due, and what late fee can Trailworks charge if Harbor Goods pays after that?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:2",
+        "harbor-goods__voyage-4:invoice-rules:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A Trailworks invoice is due net 45 from the invoice date. If Harbor Goods pays after the due date, suppliers may charge a late fee of 1.5 percent per month on the overdue amount, worked out per full month of delay.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:1\",\"quote\":\"Payment is due net 45 from the invoice date.\"},{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:2\",\"quote\":\"Suppliers may charge a late fee of 1.5 percent per month on any invoice amount that Harbor Goods pays after the due date. The fee is worked out per full month of delay.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q042",
+      "question": "Who has to approve a purchase order placed at exactly the Alpinewood minimum order value?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:purchase-orders:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:1",
+        "harbor-goods__voyage-4:purchase-orders:2",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The Alpinewood minimum order value is 2,500 USD per purchase order. A PO above 1,000 USD and up to 10,000 USD needs approval from the Operations Manager, so a 2,500 USD PO needs the Operations Manager's approval (and nobody may approve a PO they raised themselves).\",\"abstained\":false,\"citations\":[{\"doc_id\":\"supplier-terms-alpine\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-alpine:1\",\"quote\":\"The minimum order value is 2,500 USD per purchase order, measured before freight.\"},{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:1\",\"quote\":\"Purchase orders above 1,000 USD and up to 10,000 USD need approval from the Operations Manager.\"},{\"doc_id\":\"purchase-orders\",\"chunk_id\":\"harbor-goods__voyage-4:purchase-orders:2\",\"quote\":\"Nobody may approve a PO they raised themselves.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q043",
+      "question": "A customer orders 90 USD of gear by standard service to a Zone 3 postal code on the remote-area list. What do they pay for shipping?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-rates-zones:2",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:shipping-rates-zones:1",
+        "harbor-goods__voyage-4:shipping-policy:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4, but the remote-area surcharge still applies, so the customer pays 6.50 USD for shipping.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:1\",\"quote\":\"Orders of 75 USD or more ship free by standard service to Zones 1 to 4.\"},{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:1\",\"quote\":\"the remote-area surcharge still applies to orders that do qualify\"},{\"doc_id\":\"shipping-rates-zones\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-rates-zones:2\",\"quote\":\"A remote-area surcharge of 6.50 USD per parcel applies to every parcel sent to a postal code on the remote-area list, even when the order qualifies for free shipping.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q044",
+      "question": "After a change-of-mind return reaches the warehouse, how soon is it inspected and what is deducted from the refund?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:refunds-chargebacks:0",
+        "harbor-goods__voyage-4:returns-policy:1",
+        "harbor-goods__voyage-4:refunds-chargebacks:1",
+        "harbor-goods__voyage-4:returns-policy-2025:2",
+        "harbor-goods__voyage-4:returns-policy:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Returned items are inspected within 3 business days of arriving at the warehouse. For change-of-mind returns, a flat return label fee of 6.95 USD is deducted from the refund.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"refunds-chargebacks\",\"chunk_id\":\"harbor-goods__voyage-4:refunds-chargebacks:0\",\"quote\":\"Returned items are inspected within 3 business days of arriving at the warehouse.\"},{\"doc_id\":\"returns-policy\",\"chunk_id\":\"harbor-goods__voyage-4:returns-policy:1\",\"quote\":\"For change-of-mind returns, a flat return label fee of 6.95 USD is deducted from the refund.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q045",
+      "question": "How long is the customer warranty on Harbor Line backpacks, and for how long does Trailworks reimburse those claims?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:warranty:1",
+        "harbor-goods__voyage-4:warranty:0",
+        "harbor-goods__voyage-4:warranty:2",
+        "harbor-goods__voyage-4:warranty:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Harbor Line backpacks have a customer warranty of 5 years from the date of delivery, and Trailworks reimburses approved warranty claims on them for up to 5 years from delivery to the customer.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"warranty\",\"chunk_id\":\"harbor-goods__voyage-4:warranty:1\",\"quote\":\"Harbor Line backpacks, our own brand, are covered for 5 years from the date of delivery.\"},{\"doc_id\":\"supplier-terms-trailworks\",\"chunk_id\":\"harbor-goods__voyage-4:supplier-terms-trailworks:5\",\"quote\":\"and for up to 5 years for Harbor Line backpacks\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q046",
+      "question": "What is the heaviest carton a packer may send with NorthRoute, and which carrier takes heavier shipments?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:carrier-rules:0",
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:packing:1",
+        "harbor-goods__voyage-4:carrier-rules:2",
+        "harbor-goods__voyage-4:carrier-rules:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"A single carton sent with NorthRoute Parcel must not weigh more than 30 lb. Shipments weighing from 30.1 lb to 150 lb go by Swiftline Freight.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"packing\",\"chunk_id\":\"harbor-goods__voyage-4:packing:1\",\"quote\":\"A single carton must not weigh more than 30 lb, so that it can travel with NorthRoute Parcel.\"},{\"doc_id\":\"carrier-rules\",\"chunk_id\":\"harbor-goods__voyage-4:carrier-rules:0\",\"quote\":\"Swiftline Freight carries shipments weighing from 30.1 lb to 150 lb\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q047",
+      "question": "What is the normal handling time, and how long can it be during the 2026 peak season?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:holiday-schedule:1",
+        "harbor-goods__voyage-4:shipping-policy:2",
+        "harbor-goods__voyage-4:holiday-schedule:3",
+        "harbor-goods__voyage-4:holiday-schedule:0",
+        "harbor-goods__voyage-4:holiday-schedule:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Normal handling time is 1 business day for in-stock items, and during the 2026 peak season it may extend to 2 business days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"Our handling time is 1 business day for in-stock items.\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:1\",\"quote\":\"During peak season, handling time may extend to 2 business days\"}]}",
+          "stop_reason": "end_turn"
+        },
+        {
+          "raw_text": "{\"answer\":\"Normal handling time is 1 business day for in-stock items, and during peak season it may extend to 2 business days.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"shipping-policy\",\"chunk_id\":\"harbor-goods__voyage-4:shipping-policy:2\",\"quote\":\"Our handling time is 1 business day for in-stock items.\"},{\"doc_id\":\"holiday-schedule\",\"chunk_id\":\"harbor-goods__voyage-4:holiday-schedule:1\",\"quote\":\"During peak season, handling time may extend to 2 business days\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q048",
+      "question": "How long does a customer have to report a parcel that arrived broken, and how fast should support first reply to that ticket?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:support-hours-sla:1",
+        "harbor-goods__voyage-4:support-hours-sla:2",
+        "harbor-goods__voyage-4:damaged-goods:0",
+        "harbor-goods__voyage-4:damaged-goods:2",
+        "harbor-goods__voyage-4:damaged-goods:1"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Customers must report transit damage within 7 days of delivery. A damaged order is a priority ticket, so the first response is due within 2 business hours.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"damaged-goods\",\"chunk_id\":\"harbor-goods__voyage-4:damaged-goods:0\",\"quote\":\"Customers must report transit damage within 7 days of delivery.\"},{\"doc_id\":\"support-hours-sla\",\"chunk_id\":\"harbor-goods__voyage-4:support-hours-sla:1\",\"quote\":\"Priority tickets get a first response within 2 business hours.\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q049",
+      "question": "Which warehouse document must agree with the invoice before accounts payable pays a supplier, and when is it created?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:invoice-rules:0",
+        "harbor-goods__voyage-4:invoice-rules:1",
+        "harbor-goods__voyage-4:invoice-rules:3",
+        "harbor-goods__voyage-4:receiving-goods:3",
+        "harbor-goods__voyage-4:supplier-terms-alpine:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"The receiving report must agree with the invoice (along with the purchase order) in the three-way match before payment. The receiver enters it in the inventory system on the day of delivery.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:1\",\"quote\":\"The invoice, the purchase order and the receiving report must agree on the items, quantities and prices.\"},{\"doc_id\":\"receiving-goods\",\"chunk_id\":\"harbor-goods__voyage-4:receiving-goods:3\",\"quote\":\"The receiver enters a receiving report in the inventory system on the day of delivery\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q050",
+      "question": "Are paid supplier invoices and customer order records kept for the same length of time?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:data-retention:1",
+        "harbor-goods__voyage-4:invoice-rules:3",
+        "harbor-goods__voyage-4:data-retention:0",
+        "harbor-goods__voyage-4:data-retention:4",
+        "harbor-goods__voyage-4:data-retention:5"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Yes, both are kept for 7 years, though the starting point is stated differently for customer order records: they are kept for 7 years after the end of the financial year in which the order was placed. Paid supplier invoices are stored for 7 years in the finance system.\",\"abstained\":false,\"citations\":[{\"doc_id\":\"invoice-rules\",\"chunk_id\":\"harbor-goods__voyage-4:invoice-rules:3\",\"quote\":\"Paid invoices and their matching documents are stored in the finance system for 7 years.\"},{\"doc_id\":\"data-retention\",\"chunk_id\":\"harbor-goods__voyage-4:data-retention:1\",\"quote\":\"Order records, including invoices and payment records, are kept for 7 years after the end of the financial year in which the order was placed\"}]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q051",
+      "question": "Does Harbor Goods offer a student discount?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:promo-price-rules:0",
+        "harbor-goods__voyage-4:promo-price-rules:2",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:payment-methods:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q052",
+      "question": "What is the name of the Harbor Goods CEO?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:carrier-rules:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q053",
+      "question": "How many points do customers earn in the Harbor Goods loyalty program?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:payment-methods:1",
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:promo-price-rules:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q054",
+      "question": "Can customers collect their orders by curbside pickup at the warehouse?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:carrier-rules:1",
+        "harbor-goods__voyage-4:receiving-goods:0",
+        "harbor-goods__voyage-4:carrier-rules:3",
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:carrier-rules:2"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q055",
+      "question": "Does Harbor Goods buy carbon offsets for its shipments?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4",
+        "harbor-goods__voyage-4:carrier-rules:0",
+        "harbor-goods__voyage-4:returns-policy:1",
+        "harbor-goods__voyage-4:shipping-rates-zones:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q056",
+      "question": "What hourly wage does Harbor Goods pay its warehouse packers?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:packing:3",
+        "harbor-goods__voyage-4:packing:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4",
+        "harbor-goods__voyage-4:shipping-rates-zones:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q057",
+      "question": "Does Harbor Goods sell bicycles or bicycle parts?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:returns-policy:3",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:5",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q058",
+      "question": "Is there a Harbor Goods mobile app for placing orders?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:payment-methods:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4",
+        "harbor-goods__voyage-4:payment-methods:1",
+        "harbor-goods__voyage-4:supplier-terms-alpine:4"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q059",
+      "question": "In what year was Harbor Goods founded?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:shipping-policy:0",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:4",
+        "harbor-goods__voyage-4:supplier-terms-trailworks:0",
+        "harbor-goods__voyage-4:supplier-terms-alpine:4",
+        "harbor-goods__voyage-4:supplier-terms-alpine:0"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    },
+    {
+      "question_id": "Q060",
+      "question": "What reward do customers get for a referral that brings in a new customer?",
+      "mode": "vector",
+      "retrieved_chunk_ids": [
+        "harbor-goods__voyage-4:promo-price-rules:1",
+        "harbor-goods__voyage-4:promo-price-rules:3",
+        "harbor-goods__voyage-4:promo-price-rules:0",
+        "harbor-goods__voyage-4:payment-methods:1",
+        "harbor-goods__voyage-4:refunds-chargebacks:3"
+      ],
+      "attempts": [
+        {
+          "raw_text": "{\"answer\":\"Not in the documents.\",\"abstained\":true,\"citations\":[]}",
+          "stop_reason": "end_turn"
+        }
+      ]
+    }
+  ]
+}

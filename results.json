@@ -1,0 +1,473 @@
+{
+  "retrieval_eval": {
+    "BAAI/bge-large-en-v1.5": {
+      "date": "2026-11-04",
+      "embedding_model": "BAAI/bge-large-en-v1.5",
+      "rerank_model": null,
+      "k": 5,
+      "questions": 50,
+      "modes": {
+        "vector": {
+          "n": 50,
+          "recall_at_k": 0.98,
+          "mrr": 0.97,
+          "hit_at_1": 0.94,
+          "by_tag": {
+            "exact-term": {
+              "n": 12,
+              "recall_at_k": 1.0,
+              "mrr": 0.9583,
+              "hit_at_1": 0.9167
+            },
+            "paraphrase": {
+              "n": 9,
+              "recall_at_k": 1.0,
+              "mrr": 1.0,
+              "hit_at_1": 1.0
+            }
+          },
+          "by_type": {
+            "single": {
+              "n": 40,
+              "recall_at_k": 1.0,
+              "mrr": 0.975,
+              "hit_at_1": 0.95
+            },
+            "multi": {
+              "n": 10,
+              "recall_at_k": 0.9,
+              "mrr": 0.95,
+              "hit_at_1": 0.9
+            }
+          },
+          "misses": [
+            "Q049"
+          ],
+          "seconds": 9.3
+        },
+        "hybrid": {
+          "n": 50,
+          "recall_at_k": 1.0,
+          "mrr": 0.9567,
+          "hit_at_1": 0.92,
+          "by_tag": {
+            "exact-term": {
+              "n": 12,
+              "recall_at_k": 1.0,
+              "mrr": 0.9583,
+              "hit_at_1": 0.9167
+            },
+            "paraphrase": {
+              "n": 9,
+              "recall_at_k": 1.0,
+              "mrr": 0.9444,
+              "hit_at_1": 0.8889
+            }
+          },
+          "by_type": {
+            "single": {
+              "n": 40,
+              "recall_at_k": 1.0,
+              "mrr": 0.9458,
+              "hit_at_1": 0.9
+            },
+            "multi": {
+              "n": 10,
+              "recall_at_k": 1.0,
+              "mrr": 1.0,
+              "hit_at_1": 1.0
+            }
+          },
+          "misses": [],
+          "seconds": 11.6
+        },
+        "hybrid_rerank": {
+          "not_measured": "no VOYAGE_API_KEY (the reranker is an API)"
+        }
+      }
+    },
+    "voyage-4": {
+      "date": "2026-11-05",
+      "embedding_model": "voyage-4",
+      "rerank_model": "rerank-3",
+      "k": 5,
+      "questions": 50,
+      "modes": {
+        "vector": {
+          "n": 50,
+          "recall_at_k": 1.0,
+          "mrr": 0.98,
+          "hit_at_1": 0.96,
+          "by_tag": {
+            "exact-term": {
+              "n": 12,
+              "recall_at_k": 1.0,
+              "mrr": 1.0,
+              "hit_at_1": 1.0
+            },
+            "paraphrase": {
+              "n": 9,
+              "recall_at_k": 1.0,
+              "mrr": 1.0,
+              "hit_at_1": 1.0
+            }
+          },
+          "by_type": {
+            "single": {
+              "n": 40,
+              "recall_at_k": 1.0,
+              "mrr": 0.975,
+              "hit_at_1": 0.95
+            },
+            "multi": {
+              "n": 10,
+              "recall_at_k": 1.0,
+              "mrr": 1.0,
+              "hit_at_1": 1.0
+            }
+          },
+          "misses": [],
+          "seconds": 486.0
+        },
+        "hybrid": {
+          "n": 50,
+          "recall_at_k": 1.0,
+          "mrr": 0.9567,
+          "hit_at_1": 0.92,
+          "by_tag": {
+            "exact-term": {
+              "n": 12,
+              "recall_at_k": 1.0,
+              "mrr": 1.0,
+              "hit_at_1": 1.0
+            },
+            "paraphrase": {
+              "n": 9,
+              "recall_at_k": 1.0,
+              "mrr": 0.9444,
+              "hit_at_1": 0.8889
+            }
+          },
+          "by_type": {
+            "single": {
+              "n": 40,
+              "recall_at_k": 1.0,
+              "mrr": 0.9458,
+              "hit_at_1": 0.9
+            },
+            "multi": {
+              "n": 10,
+              "recall_at_k": 1.0,
+              "mrr": 1.0,
+              "hit_at_1": 1.0
+            }
+          },
+          "misses": [],
+          "seconds": 6.7
+        },
+        "hybrid_rerank": {
+          "n": 50,
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "hit_at_1": 1.0,
+          "by_tag": {
+            "exact-term": {
+              "n": 12,
+              "recall_at_k": 1.0,
+              "mrr": 1.0,
+              "hit_at_1": 1.0
+            },
+            "paraphrase": {
+              "n": 9,
+              "recall_at_k": 1.0,
+              "mrr": 1.0,
+              "hit_at_1": 1.0
+            }
+          },
+          "by_type": {
+            "single": {
+              "n": 40,
+              "recall_at_k": 1.0,
+              "mrr": 1.0,
+              "hit_at_1": 1.0
+            },
+            "multi": {
+              "n": 10,
+              "recall_at_k": 1.0,
+              "mrr": 1.0,
+              "hit_at_1": 1.0
+            }
+          },
+          "misses": [],
+          "seconds": 1513.1,
+          "rerank_skipped": 0
+        }
+      }
+    }
+  },
+  "note": "Written by scripts only. Never edited by hand.",
+  "date": "2026-11-05",
+  "claude_model": "claude-sonnet-5-5",
+  "claude_effort": "low",
+  "embedding_model": "voyage-4",
+  "rerank_model": "rerank-3",
+  "k": 5,
+  "runs": 1,
+  "question_count": 60,
+  "price": {
+    "input_per_mtok": 2.0,
+    "output_per_mtok": 10.0,
+    "source": "claude-api skill model table, cached 2026-10-06 (list price, no caching discount)"
+  },
+  "modes": {
+    "vector": {
+      "records": 60,
+      "recall_at_k": 1.0,
+      "mrr": 0.98,
+      "valid_citation_rate": 1.0,
+      "page_accuracy": 1.0,
+      "supported_answer_rate": 0.98,
+      "fully_supported_answer_rate": 0.98,
+      "key_facts_in_answer_rate": 0.98,
+      "unsupported_shipped": 0,
+      "abstention_recall": 1.0,
+      "false_abstention": 0.0,
+      "escalation_rate": 0.0167,
+      "retry_rate": 0.0667,
+      "retry_fixed": 0.75,
+      "latency_p50_s": 2.591,
+      "latency_p95_s": 5.69,
+      "input_tokens": 133122,
+      "output_tokens": 11035,
+      "cost_usd": 0.3766,
+      "by_tag": {
+        "exact-term": {
+          "n": 12,
+          "supported_answer_rate": 0.9167,
+          "recall_at_k": 1.0
+        },
+        "paraphrase": {
+          "n": 9,
+          "supported_answer_rate": 1.0,
+          "recall_at_k": 1.0
+        }
+      }
+    },
+    "hybrid": {
+      "records": 60,
+      "recall_at_k": 1.0,
+      "mrr": 0.9567,
+      "valid_citation_rate": 1.0,
+      "page_accuracy": 0.9474,
+      "supported_answer_rate": 1.0,
+      "fully_supported_answer_rate": 0.96,
+      "key_facts_in_answer_rate": 0.98,
+      "unsupported_shipped": 0,
+      "abstention_recall": 1.0,
+      "false_abstention": 0.0,
+      "escalation_rate": 0.0,
+      "retry_rate": 0.0833,
+      "retry_fixed": 1.0,
+      "latency_p50_s": 2.95,
+      "latency_p95_s": 53.055,
+      "input_tokens": 140511,
+      "output_tokens": 11490,
+      "cost_usd": 0.3959,
+      "by_tag": {
+        "exact-term": {
+          "n": 12,
+          "supported_answer_rate": 1.0,
+          "recall_at_k": 1.0
+        },
+        "paraphrase": {
+          "n": 9,
+          "supported_answer_rate": 1.0,
+          "recall_at_k": 1.0
+        }
+      }
+    },
+    "hybrid_rerank": {
+      "records": 60,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "valid_citation_rate": 1.0,
+      "page_accuracy": 1.0,
+      "supported_answer_rate": 0.98,
+      "fully_supported_answer_rate": 0.98,
+      "key_facts_in_answer_rate": 0.98,
+      "unsupported_shipped": 0,
+      "abstention_recall": 1.0,
+      "false_abstention": 0.0,
+      "escalation_rate": 0.0167,
+      "retry_rate": 0.0667,
+      "retry_fixed": 0.75,
+      "latency_p50_s": 52.432,
+      "latency_p95_s": 57.633,
+      "input_tokens": 134887,
+      "output_tokens": 11137,
+      "cost_usd": 0.3811,
+      "by_tag": {
+        "exact-term": {
+          "n": 12,
+          "supported_answer_rate": 0.9167,
+          "recall_at_k": 1.0
+        },
+        "paraphrase": {
+          "n": 9,
+          "supported_answer_rate": 1.0,
+          "recall_at_k": 1.0
+        }
+      }
+    }
+  },
+  "per_run": {
+    "vector": {
+      "1": {
+        "records": 60,
+        "recall_at_k": 1.0,
+        "mrr": 0.98,
+        "valid_citation_rate": 1.0,
+        "page_accuracy": 1.0,
+        "supported_answer_rate": 0.98,
+        "fully_supported_answer_rate": 0.98,
+        "key_facts_in_answer_rate": 0.98,
+        "unsupported_shipped": 0,
+        "abstention_recall": 1.0,
+        "false_abstention": 0.0,
+        "escalation_rate": 0.0167,
+        "retry_rate": 0.0667,
+        "retry_fixed": 0.75,
+        "latency_p50_s": 2.591,
+        "latency_p95_s": 5.69,
+        "input_tokens": 133122,
+        "output_tokens": 11035,
+        "cost_usd": 0.3766,
+        "by_tag": {
+          "exact-term": {
+            "n": 12,
+            "supported_answer_rate": 0.9167,
+            "recall_at_k": 1.0
+          },
+          "paraphrase": {
+            "n": 9,
+            "supported_answer_rate": 1.0,
+            "recall_at_k": 1.0
+          }
+        }
+      }
+    },
+    "hybrid": {
+      "1": {
+        "records": 60,
+        "recall_at_k": 1.0,
+        "mrr": 0.9567,
+        "valid_citation_rate": 1.0,
+        "page_accuracy": 0.9474,
+        "supported_answer_rate": 1.0,
+        "fully_supported_answer_rate": 0.96,
+        "key_facts_in_answer_rate": 0.98,
+        "unsupported_shipped": 0,
+        "abstention_recall": 1.0,
+        "false_abstention": 0.0,
+        "escalation_rate": 0.0,
+        "retry_rate": 0.0833,
+        "retry_fixed": 1.0,
+        "latency_p50_s": 2.95,
+        "latency_p95_s": 53.055,
+        "input_tokens": 140511,
+        "output_tokens": 11490,
+        "cost_usd": 0.3959,
+        "by_tag": {
+          "exact-term": {
+            "n": 12,
+            "supported_answer_rate": 1.0,
+            "recall_at_k": 1.0
+          },
+          "paraphrase": {
+            "n": 9,
+            "supported_answer_rate": 1.0,
+            "recall_at_k": 1.0
+          }
+        }
+      }
+    },
+    "hybrid_rerank": {
+      "1": {
+        "records": 60,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "valid_citation_rate": 1.0,
+        "page_accuracy": 1.0,
+        "supported_answer_rate": 0.98,
+        "fully_supported_answer_rate": 0.98,
+        "key_facts_in_answer_rate": 0.98,
+        "unsupported_shipped": 0,
+        "abstention_recall": 1.0,
+        "false_abstention": 0.0,
+        "escalation_rate": 0.0167,
+        "retry_rate": 0.0667,
+        "retry_fixed": 0.75,
+        "latency_p50_s": 52.432,
+        "latency_p95_s": 57.633,
+        "input_tokens": 134887,
+        "output_tokens": 11137,
+        "cost_usd": 0.3811,
+        "by_tag": {
+          "exact-term": {
+            "n": 12,
+            "supported_answer_rate": 0.9167,
+            "recall_at_k": 1.0
+          },
+          "paraphrase": {
+            "n": 9,
+            "supported_answer_rate": 1.0,
+            "recall_at_k": 1.0
+          }
+        }
+      }
+    }
+  },
+  "baseline_no_guard": {
+    "answers_with_invalid_quote": 0,
+    "of_answers": 150,
+    "rate": 0.0,
+    "answers_without_citations": 0,
+    "answers_failing_evidence_check": 13,
+    "failing_rate": 0.0867,
+    "definition": "first attempt of each run-1 answer as the model wrote it, before the evidence check and retry (same prompt, same model); all modes"
+  },
+  "misses": [
+    {
+      "question_id": "Q029",
+      "mode": "hybrid_rerank",
+      "runs_missed": [
+        1
+      ],
+      "what_went_wrong": "needs_human after retry: the number 12,000 in the answer does not appear in any cited quote"
+    },
+    {
+      "question_id": "Q029",
+      "mode": "vector",
+      "runs_missed": [
+        1
+      ],
+      "what_went_wrong": "needs_human after retry: the number 12,000 in the answer does not appear in any cited quote"
+    },
+    {
+      "question_id": "Q041",
+      "mode": "hybrid",
+      "runs_missed": [
+        1
+      ],
+      "what_went_wrong": "partial answer: no expected quote from supplier-terms-trailworks"
+    },
+    {
+      "question_id": "Q045",
+      "mode": "hybrid",
+      "runs_missed": [
+        1
+      ],
+      "what_went_wrong": "partial answer: no expected quote from warranty"
+    }
+  ]
+}

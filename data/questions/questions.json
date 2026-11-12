@@ -1,0 +1,1224 @@
+[
+  {
+    "id": "Q001",
+    "type": "single",
+    "question": "How many days do customers have to return unused items?",
+    "expected_doc_ids": [
+      "returns-policy"
+    ],
+    "expected_quotes": [
+      "Customers may return unused items within 30 days of delivery."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "30"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "decoy: returns-policy-2025 says 45 days"
+  },
+  {
+    "id": "Q002",
+    "type": "single",
+    "question": "Who covers the postage when I send back something I simply changed my mind about?",
+    "expected_doc_ids": [
+      "returns-policy"
+    ],
+    "expected_quotes": [
+      "For change-of-mind returns, a flat return label fee of 6.95 USD is deducted from the refund."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "6.95"
+    ],
+    "tags": [
+      "paraphrase"
+    ],
+    "must_not_appear": [],
+    "notes": "decoy: returns-policy-2025 made the customer pay the full return shipping cost"
+  },
+  {
+    "id": "Q003",
+    "type": "single",
+    "question": "What restocking fee applies to opened electronics?",
+    "expected_doc_ids": [
+      "returns-policy"
+    ],
+    "expected_quotes": [
+      "Opened electronics, such as GPS units and satellite messengers, carry a 15 percent restocking fee unless they are defective."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "15 percent"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": "decoy: returns-policy-2025 charged 20 percent on all opened items"
+  },
+  {
+    "id": "Q004",
+    "type": "single",
+    "question": "Can a customer exchange an item for a different size?",
+    "expected_doc_ids": [
+      "returns-policy"
+    ],
+    "expected_quotes": [
+      "Each order includes one free exchange for a different size or color of the same item."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "one free exchange"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "decoy: returns-policy-2025 offered no exchanges"
+  },
+  {
+    "id": "Q005",
+    "type": "single",
+    "question": "When was the 2025 returns policy superseded, and by which version?",
+    "expected_doc_ids": [
+      "returns-policy-2025"
+    ],
+    "expected_quotes": [
+      "Superseded on 2026-01-15 by the Returns Policy version 2026-01."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "2026-01-15",
+      "2026-01"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "asks about the old decoy document itself"
+  },
+  {
+    "id": "Q006",
+    "type": "single",
+    "question": "What are the payment terms with Alpinewood?",
+    "expected_doc_ids": [
+      "supplier-terms-alpine"
+    ],
+    "expected_quotes": [
+      "Payment is due net 30 from the invoice date."
+    ],
+    "expected_pages": [
+      1
+    ],
+    "must_contain": [
+      "net 30"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": "decoy: Trailworks is net 45 with the same sentence shape; page 1"
+  },
+  {
+    "id": "Q007",
+    "type": "single",
+    "question": "What are the payment terms with Trailworks?",
+    "expected_doc_ids": [
+      "supplier-terms-trailworks"
+    ],
+    "expected_quotes": [
+      "Payment is due net 45 from the invoice date."
+    ],
+    "expected_pages": [
+      1
+    ],
+    "must_contain": [
+      "net 45"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": "decoy: Alpinewood is net 30; page 1"
+  },
+  {
+    "id": "Q008",
+    "type": "single",
+    "question": "What is the minimum order value for a Trailworks purchase order?",
+    "expected_doc_ids": [
+      "supplier-terms-trailworks"
+    ],
+    "expected_quotes": [
+      "The minimum order value is 4,000 USD per purchase order, measured before freight."
+    ],
+    "expected_pages": [
+      1
+    ],
+    "must_contain": [
+      "4,000"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": "decoy: Alpinewood minimum is 2,500 USD; page 1"
+  },
+  {
+    "id": "Q009",
+    "type": "single",
+    "question": "What does Alpinewood owe Harbor Goods when a delivery is late?",
+    "expected_doc_ids": [
+      "supplier-terms-alpine"
+    ],
+    "expected_quotes": [
+      "Alpinewood credits Harbor Goods 1 percent of the purchase order value for each full week of delay, capped at 5 percent of the purchase order value."
+    ],
+    "expected_pages": [
+      2
+    ],
+    "must_contain": [
+      "1 percent",
+      "5 percent"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "decoy: Trailworks credits 2 percent per week capped at 10 percent; page 2"
+  },
+  {
+    "id": "Q010",
+    "type": "single",
+    "question": "What is the standard lead time for Trailworks orders?",
+    "expected_doc_ids": [
+      "supplier-terms-trailworks"
+    ],
+    "expected_quotes": [
+      "The standard lead time is 35 calendar days from confirmation of the purchase order to delivery at the Harbor Goods warehouse."
+    ],
+    "expected_pages": [
+      2
+    ],
+    "must_contain": [
+      "35"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "decoy: Alpinewood lead time is 21 calendar days; page 2"
+  },
+  {
+    "id": "Q011",
+    "type": "single",
+    "question": "Do we get anything off if we settle an Alpinewood bill quickly?",
+    "expected_doc_ids": [
+      "supplier-terms-alpine"
+    ],
+    "expected_quotes": [
+      "Harbor Goods may take a 2 percent early payment discount if it pays the full invoice within 10 days of the invoice date."
+    ],
+    "expected_pages": [
+      1
+    ],
+    "must_contain": [
+      "2 percent",
+      "10 days"
+    ],
+    "tags": [
+      "paraphrase"
+    ],
+    "must_not_appear": [],
+    "notes": "decoy: Trailworks offers no early payment discount; page 1"
+  },
+  {
+    "id": "Q012",
+    "type": "single",
+    "question": "How long does Harbor Goods have to report manufacturing defects to Trailworks?",
+    "expected_doc_ids": [
+      "supplier-terms-trailworks"
+    ],
+    "expected_quotes": [
+      "Harbor Goods reports manufacturing defects to Trailworks within 30 days of receipt."
+    ],
+    "expected_pages": [
+      3
+    ],
+    "must_contain": [
+      "30 days"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "decoy: Alpinewood allows 14 days for defects found at receiving; page 3"
+  },
+  {
+    "id": "Q013",
+    "type": "single",
+    "question": "How long are tents covered by the warranty?",
+    "expected_doc_ids": [
+      "warranty"
+    ],
+    "expected_quotes": [
+      "Tents and shelters are covered for 2 years from the date of delivery."
+    ],
+    "expected_pages": [
+      1
+    ],
+    "must_contain": [
+      "2 years"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "page 1"
+  },
+  {
+    "id": "Q014",
+    "type": "single",
+    "question": "How long is the warranty on Harbor Line backpacks?",
+    "expected_doc_ids": [
+      "warranty"
+    ],
+    "expected_quotes": [
+      "Harbor Line backpacks, our own brand, are covered for 5 years from the date of delivery."
+    ],
+    "expected_pages": [
+      1
+    ],
+    "must_contain": [
+      "5 years"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "page 1; other backpack brands get 1 year"
+  },
+  {
+    "id": "Q015",
+    "type": "single",
+    "question": "My tent fabric was damaged by the sun after two seasons of use. Will the warranty pay for it?",
+    "expected_doc_ids": [
+      "warranty"
+    ],
+    "expected_quotes": [
+      "UV damage to tent fabrics is excluded after the first 12 months."
+    ],
+    "expected_pages": [
+      2
+    ],
+    "must_contain": [
+      "12 months"
+    ],
+    "tags": [
+      "paraphrase"
+    ],
+    "must_not_appear": [],
+    "notes": "page 2"
+  },
+  {
+    "id": "Q016",
+    "type": "single",
+    "question": "What happens to a warranty claim when the repair would cost too much?",
+    "expected_doc_ids": [
+      "warranty"
+    ],
+    "expected_quotes": [
+      "If the repair would cost more than 60 percent of the price paid, we replace the product with the same item or the closest current model."
+    ],
+    "expected_pages": [
+      2
+    ],
+    "must_contain": [
+      "60 percent"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "page 2"
+  },
+  {
+    "id": "Q017",
+    "type": "single",
+    "question": "Which form is used to make a warranty claim?",
+    "expected_doc_ids": [
+      "warranty"
+    ],
+    "expected_quotes": [
+      "Claims are made with warranty claim form WC-1, which is available from the customer account or from support."
+    ],
+    "expected_pages": [
+      3
+    ],
+    "must_contain": [
+      "WC-1"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": "page 3"
+  },
+  {
+    "id": "Q018",
+    "type": "single",
+    "question": "How long does Harbor Goods keep order records?",
+    "expected_doc_ids": [
+      "data-retention"
+    ],
+    "expected_quotes": [
+      "Order records, including invoices and payment records, are kept for 7 years after the end of the financial year in which the order was placed, to meet tax and accounting rules."
+    ],
+    "expected_pages": [
+      1
+    ],
+    "must_contain": [
+      "7 years"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "page 1"
+  },
+  {
+    "id": "Q019",
+    "type": "single",
+    "question": "If I ask Harbor Goods to erase my personal information, how long until it is gone?",
+    "expected_doc_ids": [
+      "data-retention"
+    ],
+    "expected_quotes": [
+      "Once the identity is verified, we complete the deletion within 30 days and send a confirmation email."
+    ],
+    "expected_pages": [
+      2
+    ],
+    "must_contain": [
+      "30 days"
+    ],
+    "tags": [
+      "paraphrase"
+    ],
+    "must_not_appear": [],
+    "notes": "page 2"
+  },
+  {
+    "id": "Q020",
+    "type": "single",
+    "question": "How long are backups of the order and customer systems kept?",
+    "expected_doc_ids": [
+      "data-retention"
+    ],
+    "expected_quotes": [
+      "Backups of the order and customer systems are kept for 35 days."
+    ],
+    "expected_pages": [
+      3
+    ],
+    "must_contain": [
+      "35 days"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "page 3"
+  },
+  {
+    "id": "Q021",
+    "type": "single",
+    "question": "What is the minimum order value for free shipping?",
+    "expected_doc_ids": [
+      "shipping-policy"
+    ],
+    "expected_quotes": [
+      "Orders of 75 USD or more ship free by standard service to Zones 1 to 4."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "75"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q022",
+    "type": "single",
+    "question": "How soon after I buy something does it leave the warehouse?",
+    "expected_doc_ids": [
+      "shipping-policy"
+    ],
+    "expected_quotes": [
+      "Our handling time is 1 business day for in-stock items."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "1 business day"
+    ],
+    "tags": [
+      "paraphrase"
+    ],
+    "must_not_appear": [],
+    "notes": "peak season can extend this, see holiday-schedule"
+  },
+  {
+    "id": "Q023",
+    "type": "single",
+    "question": "How much does a standard parcel to Zone 2 cost?",
+    "expected_doc_ids": [
+      "shipping-rates-zones"
+    ],
+    "expected_quotes": [
+      "Zone 2 parcels cost 8.40 USD each."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "8.40"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q024",
+    "type": "single",
+    "question": "What is the remote-area surcharge, and does it apply when shipping is free?",
+    "expected_doc_ids": [
+      "shipping-rates-zones"
+    ],
+    "expected_quotes": [
+      "A remote-area surcharge of 6.50 USD per parcel applies to every parcel sent to a postal code on the remote-area list, even when the order qualifies for free shipping."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "6.50"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q025",
+    "type": "single",
+    "question": "What is the heaviest single parcel NorthRoute Parcel will carry?",
+    "expected_doc_ids": [
+      "carrier-rules"
+    ],
+    "expected_quotes": [
+      "NorthRoute Parcel carries single parcels weighing up to 30 lb."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "30 lb"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q026",
+    "type": "single",
+    "question": "Can two promo codes be used on the same order?",
+    "expected_doc_ids": [
+      "promo-price-rules"
+    ],
+    "expected_quotes": [
+      "Only one promo code can be used per order."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "one promo code"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q027",
+    "type": "single",
+    "question": "Once my returned item has been checked, how soon do I get my money back?",
+    "expected_doc_ids": [
+      "refunds-chargebacks"
+    ],
+    "expected_quotes": [
+      "Refunds are issued within 5 business days after the returned item passes inspection."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "5 business days"
+    ],
+    "tags": [
+      "paraphrase"
+    ],
+    "must_not_appear": [],
+    "notes": "decoy: returns-policy-2025 said 14 business days after arrival"
+  },
+  {
+    "id": "Q028",
+    "type": "single",
+    "question": "Which chargebacks does the finance team accept without contesting them?",
+    "expected_doc_ids": [
+      "refunds-chargebacks"
+    ],
+    "expected_quotes": [
+      "Chargebacks for amounts under 25 USD are accepted without a contest, because the cost of responding is higher than the amount."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "25 USD"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q029",
+    "type": "single",
+    "question": "Who must approve a purchase order worth 12,000 USD?",
+    "expected_doc_ids": [
+      "purchase-orders"
+    ],
+    "expected_quotes": [
+      "Purchase orders above 10,000 USD need approval from both the Operations Manager and the Finance Director."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "Finance Director"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": "PO threshold 10,000 USD"
+  },
+  {
+    "id": "Q030",
+    "type": "single",
+    "question": "What format do purchase order numbers use?",
+    "expected_doc_ids": [
+      "purchase-orders"
+    ],
+    "expected_quotes": [
+      "Each PO gets a number in the format PO-2026-0001, counting up through the year."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "PO-2026-0001"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q031",
+    "type": "single",
+    "question": "What price difference is allowed in the three-way match?",
+    "expected_doc_ids": [
+      "invoice-rules"
+    ],
+    "expected_quotes": [
+      "A price difference is accepted if it is no more than 2 percent of the line value or 50 USD, whichever is lower."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "2 percent",
+      "50 USD"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q032",
+    "type": "single",
+    "question": "On which day of the week are supplier invoices paid?",
+    "expected_doc_ids": [
+      "invoice-rules"
+    ],
+    "expected_quotes": [
+      "Payment runs take place every Thursday."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "Thursday"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q033",
+    "type": "single",
+    "question": "Do Harbor Goods gift cards expire?",
+    "expected_doc_ids": [
+      "payment-methods"
+    ],
+    "expected_quotes": [
+      "Gift card codes start with HGC followed by 12 digits, and gift cards never expire."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "never expire"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q034",
+    "type": "single",
+    "question": "How often are class A SKUs counted?",
+    "expected_doc_ids": [
+      "inventory-counts"
+    ],
+    "expected_quotes": [
+      "Class A SKUs are counted every week."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "every week"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q035",
+    "type": "single",
+    "question": "When does a stock count difference mean someone else has to count the bin again?",
+    "expected_doc_ids": [
+      "inventory-counts"
+    ],
+    "expected_quotes": [
+      "A variance of more than 3 percent of the system quantity triggers a recount by a second counter."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "3 percent"
+    ],
+    "tags": [
+      "paraphrase"
+    ],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q036",
+    "type": "single",
+    "question": "How soon must visible transport damage on a supplier delivery be reported?",
+    "expected_doc_ids": [
+      "receiving-goods"
+    ],
+    "expected_quotes": [
+      "Visible transport damage must be reported to the carrier and the supplier within 48 hours of delivery, with photos of the damaged cartons and contents."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "48 hours"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q037",
+    "type": "single",
+    "question": "How much empty space should a packer leave around the items when picking a box?",
+    "expected_doc_ids": [
+      "packing"
+    ],
+    "expected_quotes": [
+      "Use the smallest box that leaves at least 2 inches of padding between the items and every side of the box."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "2 inches"
+    ],
+    "tags": [
+      "paraphrase"
+    ],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q038",
+    "type": "single",
+    "question": "How many photos must a customer send when reporting transit damage?",
+    "expected_doc_ids": [
+      "damaged-goods"
+    ],
+    "expected_quotes": [
+      "The report must include at least 3 photos: one of the outer box, one of the packing inside, and one of the damaged item."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "3 photos"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q039",
+    "type": "single",
+    "question": "What is the first-response target for support emails?",
+    "expected_doc_ids": [
+      "support-hours-sla"
+    ],
+    "expected_quotes": [
+      "The first-response target for email is 4 business hours."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "4 business hours"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q040",
+    "type": "single",
+    "question": "What is the last order day for standard delivery before Christmas 2026?",
+    "expected_doc_ids": [
+      "holiday-schedule"
+    ],
+    "expected_quotes": [
+      "The last order day for standard delivery is Wednesday 16 December 2026."
+    ],
+    "expected_pages": [
+      null
+    ],
+    "must_contain": [
+      "16 December"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q041",
+    "type": "multi",
+    "question": "When is a Trailworks invoice due, and what late fee can Trailworks charge if Harbor Goods pays after that?",
+    "expected_doc_ids": [
+      "supplier-terms-trailworks",
+      "invoice-rules"
+    ],
+    "expected_quotes": [
+      "Payment is due net 45 from the invoice date.",
+      "Suppliers may charge a late fee of 1.5 percent per month on any invoice amount that Harbor Goods pays after the due date."
+    ],
+    "expected_pages": [
+      1,
+      null
+    ],
+    "must_contain": [
+      "net 45",
+      "1.5 percent"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "must_not_appear": [],
+    "notes": "decoy: Alpinewood is net 30; Trailworks page 1"
+  },
+  {
+    "id": "Q042",
+    "type": "multi",
+    "question": "Who has to approve a purchase order placed at exactly the Alpinewood minimum order value?",
+    "expected_doc_ids": [
+      "supplier-terms-alpine",
+      "purchase-orders"
+    ],
+    "expected_quotes": [
+      "The minimum order value is 2,500 USD per purchase order, measured before freight.",
+      "Purchase orders above 1,000 USD and up to 10,000 USD need approval from the Operations Manager."
+    ],
+    "expected_pages": [
+      1,
+      null
+    ],
+    "must_contain": [
+      "2,500",
+      "Operations Manager"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "decoy: Trailworks minimum is 4,000 USD; Alpinewood page 1"
+  },
+  {
+    "id": "Q043",
+    "type": "multi",
+    "question": "A customer orders 90 USD of gear by standard service to a Zone 3 postal code on the remote-area list. What do they pay for shipping?",
+    "expected_doc_ids": [
+      "shipping-policy",
+      "shipping-rates-zones"
+    ],
+    "expected_quotes": [
+      "Orders of 75 USD or more ship free by standard service to Zones 1 to 4.",
+      "A remote-area surcharge of 6.50 USD per parcel applies to every parcel sent to a postal code on the remote-area list, even when the order qualifies for free shipping."
+    ],
+    "expected_pages": [
+      null,
+      null
+    ],
+    "must_contain": [
+      "6.50"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "free shipping applies but the surcharge does not go away"
+  },
+  {
+    "id": "Q044",
+    "type": "multi",
+    "question": "After a change-of-mind return reaches the warehouse, how soon is it inspected and what is deducted from the refund?",
+    "expected_doc_ids": [
+      "returns-policy",
+      "refunds-chargebacks"
+    ],
+    "expected_quotes": [
+      "For change-of-mind returns, a flat return label fee of 6.95 USD is deducted from the refund.",
+      "Returned items are inspected within 3 business days of arriving at the warehouse."
+    ],
+    "expected_pages": [
+      null,
+      null
+    ],
+    "must_contain": [
+      "6.95",
+      "3 business days"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "decoy: returns-policy-2025 had different return shipping rules"
+  },
+  {
+    "id": "Q045",
+    "type": "multi",
+    "question": "How long is the customer warranty on Harbor Line backpacks, and for how long does Trailworks reimburse those claims?",
+    "expected_doc_ids": [
+      "warranty",
+      "supplier-terms-trailworks"
+    ],
+    "expected_quotes": [
+      "Harbor Line backpacks, our own brand, are covered for 5 years from the date of delivery.",
+      "Trailworks reimburses Harbor Goods for approved warranty claims on Trailworks products for up to 1 year from delivery to the customer, and for up to 5 years for Harbor Line backpacks."
+    ],
+    "expected_pages": [
+      1,
+      3
+    ],
+    "must_contain": [
+      "5 years"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "warranty page 1; Trailworks page 3"
+  },
+  {
+    "id": "Q046",
+    "type": "multi",
+    "question": "What is the heaviest carton a packer may send with NorthRoute, and which carrier takes heavier shipments?",
+    "expected_doc_ids": [
+      "packing",
+      "carrier-rules"
+    ],
+    "expected_quotes": [
+      "A single carton must not weigh more than 30 lb, so that it can travel with NorthRoute Parcel.",
+      "Swiftline Freight carries shipments weighing from 30.1 lb to 150 lb, either as one heavy carton or as several cartons strapped together."
+    ],
+    "expected_pages": [
+      null,
+      null
+    ],
+    "must_contain": [
+      "30 lb",
+      "Swiftline"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q047",
+    "type": "multi",
+    "question": "What is the normal handling time, and how long can it be during the 2026 peak season?",
+    "expected_doc_ids": [
+      "shipping-policy",
+      "holiday-schedule"
+    ],
+    "expected_quotes": [
+      "Our handling time is 1 business day for in-stock items.",
+      "During peak season, handling time may extend to 2 business days, because order volume is several times higher than usual."
+    ],
+    "expected_pages": [
+      null,
+      null
+    ],
+    "must_contain": [
+      "1 business day",
+      "2 business days"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q048",
+    "type": "multi",
+    "question": "How long does a customer have to report a parcel that arrived broken, and how fast should support first reply to that ticket?",
+    "expected_doc_ids": [
+      "damaged-goods",
+      "support-hours-sla"
+    ],
+    "expected_quotes": [
+      "Customers must report transit damage within 7 days of delivery.",
+      "Priority tickets get a first response within 2 business hours."
+    ],
+    "expected_pages": [
+      null,
+      null
+    ],
+    "must_contain": [
+      "7 days",
+      "2 business hours"
+    ],
+    "tags": [
+      "paraphrase"
+    ],
+    "must_not_appear": [],
+    "notes": "a damaged order is a priority ticket"
+  },
+  {
+    "id": "Q049",
+    "type": "multi",
+    "question": "Which warehouse document must agree with the invoice before accounts payable pays a supplier, and when is it created?",
+    "expected_doc_ids": [
+      "invoice-rules",
+      "receiving-goods"
+    ],
+    "expected_quotes": [
+      "The invoice, the purchase order and the receiving report must agree on the items, quantities and prices.",
+      "The receiver enters a receiving report in the inventory system on the day of delivery, listing the quantity received in good condition for each SKU."
+    ],
+    "expected_pages": [
+      null,
+      null
+    ],
+    "must_contain": [
+      "receiving report"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": ""
+  },
+  {
+    "id": "Q050",
+    "type": "multi",
+    "question": "Are paid supplier invoices and customer order records kept for the same length of time?",
+    "expected_doc_ids": [
+      "invoice-rules",
+      "data-retention"
+    ],
+    "expected_quotes": [
+      "Paid invoices and their matching documents are stored in the finance system for 7 years.",
+      "Order records, including invoices and payment records, are kept for 7 years after the end of the financial year in which the order was placed, to meet tax and accounting rules."
+    ],
+    "expected_pages": [
+      null,
+      1
+    ],
+    "must_contain": [
+      "7 years"
+    ],
+    "tags": [],
+    "must_not_appear": [],
+    "notes": "data-retention page 1"
+  },
+  {
+    "id": "Q051",
+    "type": "unanswerable",
+    "question": "Does Harbor Goods offer a student discount?",
+    "expected_doc_ids": [],
+    "expected_quotes": [],
+    "expected_pages": [],
+    "must_contain": [],
+    "tags": [],
+    "must_not_appear": [
+      "student"
+    ],
+    "notes": "no document mentions students"
+  },
+  {
+    "id": "Q052",
+    "type": "unanswerable",
+    "question": "What is the name of the Harbor Goods CEO?",
+    "expected_doc_ids": [],
+    "expected_quotes": [],
+    "expected_pages": [],
+    "must_contain": [],
+    "tags": [],
+    "must_not_appear": [
+      "CEO"
+    ],
+    "notes": "no named executives"
+  },
+  {
+    "id": "Q053",
+    "type": "unanswerable",
+    "question": "How many points do customers earn in the Harbor Goods loyalty program?",
+    "expected_doc_ids": [],
+    "expected_quotes": [],
+    "expected_pages": [],
+    "must_contain": [],
+    "tags": [],
+    "must_not_appear": [
+      "loyalty"
+    ],
+    "notes": "no loyalty program in the documents"
+  },
+  {
+    "id": "Q054",
+    "type": "unanswerable",
+    "question": "Can customers collect their orders by curbside pickup at the warehouse?",
+    "expected_doc_ids": [],
+    "expected_quotes": [],
+    "expected_pages": [],
+    "must_contain": [],
+    "tags": [],
+    "must_not_appear": [
+      "curbside"
+    ],
+    "notes": "no in-person collection described"
+  },
+  {
+    "id": "Q055",
+    "type": "unanswerable",
+    "question": "Does Harbor Goods buy carbon offsets for its shipments?",
+    "expected_doc_ids": [],
+    "expected_quotes": [],
+    "expected_pages": [],
+    "must_contain": [],
+    "tags": [],
+    "must_not_appear": [
+      "carbon"
+    ],
+    "notes": "not covered"
+  },
+  {
+    "id": "Q056",
+    "type": "unanswerable",
+    "question": "What hourly wage does Harbor Goods pay its warehouse packers?",
+    "expected_doc_ids": [],
+    "expected_quotes": [],
+    "expected_pages": [],
+    "must_contain": [],
+    "tags": [],
+    "must_not_appear": [
+      "wage"
+    ],
+    "notes": "no pay data"
+  },
+  {
+    "id": "Q057",
+    "type": "unanswerable",
+    "question": "Does Harbor Goods sell bicycles or bicycle parts?",
+    "expected_doc_ids": [],
+    "expected_quotes": [],
+    "expected_pages": [],
+    "must_contain": [],
+    "tags": [],
+    "must_not_appear": [
+      "bicycle"
+    ],
+    "notes": "no product range list"
+  },
+  {
+    "id": "Q058",
+    "type": "unanswerable",
+    "question": "Is there a Harbor Goods mobile app for placing orders?",
+    "expected_doc_ids": [],
+    "expected_quotes": [],
+    "expected_pages": [],
+    "must_contain": [],
+    "tags": [],
+    "must_not_appear": [
+      "mobile app"
+    ],
+    "notes": "not covered"
+  },
+  {
+    "id": "Q059",
+    "type": "unanswerable",
+    "question": "In what year was Harbor Goods founded?",
+    "expected_doc_ids": [],
+    "expected_quotes": [],
+    "expected_pages": [],
+    "must_contain": [],
+    "tags": [],
+    "must_not_appear": [
+      "founded"
+    ],
+    "notes": "no company history"
+  },
+  {
+    "id": "Q060",
+    "type": "unanswerable",
+    "question": "What reward do customers get for a referral that brings in a new customer?",
+    "expected_doc_ids": [],
+    "expected_quotes": [],
+    "expected_pages": [],
+    "must_contain": [],
+    "tags": [],
+    "must_not_appear": [
+      "referral"
+    ],
+    "notes": "no referral scheme"
+  }
+]

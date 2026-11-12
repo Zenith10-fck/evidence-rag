@@ -1,0 +1,60 @@
+# Lint + tests. No API keys are used: embeddings and Claude are faked in the tests.
+# Database tests run against the pgvector service below.
+# Action versions checked on 2026-11-04: actions/checkout v7.0.1, astral-sh/setup-uv v10.3.3.
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      db:
+        image: pgvector/pgvector:0.8.4-pg16   # same tag as docker-compose.yml
+        env:
+          POSTGRES_USER: evidence
+          POSTGRES_PASSWORD: ci-only-password
+          POSTGRES_DB: evidence_rag
+        ports:
+          - 5433:5432
+        options: >-
+          --health-cmd "pg_isready -U evidence"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      TEST_DATABASE_URL: postgresql://evidence:ci-only-password@127.0.0.1:5433/evidence_rag
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10
+        with:
+          version: "0.12.17"
+      - run: uv sync --frozen
+      - run: uv run ruff check .
+      - run: uv run pytest
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Start the full stack (live mode) and check it is ready
+        # Placeholder values only: nothing here calls Anthropic or Voyage, it checks wiring.
+        env:
+          POSTGRES_PASSWORD: ci-only-password
+          API_KEY: ci-only-api-key-0123456789
+          ANTHROPIC_API_KEY: ci-placeholder
+          VOYAGE_API_KEY: ci-placeholder
+        run: |
+          docker compose up -d --build
+          for i in $(seq 1 45); do curl -sf localhost:8000/ready && break; sleep 2; done
+          curl -sf localhost:8000/health | grep -q '"mode":"live"'
+          curl -sf localhost:8000/ready | grep -q '"database":"ok"'
+          curl -sf localhost:8000/ui > /dev/null
+          curl -sf localhost:8000/docs > /dev/null
+          test "$(curl -s -o /dev/null -w '%{http_code}' -X POST -H 'content-type: application/json' -d '{"question":"ping"}' localhost:8000/ask)" = "401"
+      - name: Show logs if the stack failed
+        if: failure()
+        run: docker compose logs --no-color api db | tail -80

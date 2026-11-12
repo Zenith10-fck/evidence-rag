@@ -1,0 +1,4 @@
+# Keep LF everywhere (the corpus hashes and PDF bytes must not change on checkout).
+* text=auto eol=lf
+*.pdf binary
+*.png binary
